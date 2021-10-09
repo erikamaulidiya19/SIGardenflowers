@@ -42,8 +42,8 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 intro-text">
                             <h1>WELCOME GARDENIA FLORIST</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Duis sed dapibus leo nec ornare diam.</p>
-                            <a href="/user" class="btn btn-custom btn-lg page-scroll">More Info</a> </div>
+                            <p>Informasi mengenai bunga, tanaman dan kue ada disini.<br> Jelajahi dan dapatkan informasinya.</p>
+                            <a href="/user" class="btn btn-custom btn-lg page-scroll">Jelajahi</a> </div>
                     </div>
                 </div>
             </div>
@@ -55,39 +55,39 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <div class="about-text">
-                        <h2>Welcome to <span>Landscaper</span></h2>
+                        <h2>Welcome to <span>Gardenia Florist</span></h2>
                         <hr>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                        <a href="#services" class="btn btn-custom btn-lg page-scroll">View All Services</a> </div>
+                        <p>Kami menyediakan informasi mengenai bunga serta penjualan bunga di wilayah Banjarmasin</p>
+                        <p>Selain itu kami juga memberikan informasi mengenai caffe dan resto yang ada di wilayah Banjarmasin yang cocok untuk bersantai</p>
+                        <a href="#services" class="btn btn-custom btn-lg page-scroll">Pelayanan</a> </div>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <div class="about-media"> <img src="img/about-1.jpg" alt=" "> </div>
+                    <div class="about-media"> <img src="{!! asset('asset/asset2/img/bungaa.jpg') !!}" alt=" "> </div>
                     <div class="about-desc">
-                        <h3>Garden Care</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
+                        <h3>Bunga</h3>
+                        <p>Informasi mengenai bunga - bunga yang indah yang cocok untuk orang orang yang disayang</p>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <div class="about-media"> <img src="img/about-2.jpg" alt=" "> </div>
+                    <div class="about-media"> <img src="{!! asset('asset/asset2/img/kue.jpg') !!}" alt=" "> </div>
                     <div class="about-desc">
-                        <h3>Lawn Care</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
+                        <h3>Kue</h3>
+                        <p>Informasi mengenai kumpulan kue yang paling cocok untuk mood mu sekarang</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
-    <script type="text/javascript" src="js/bootstrap.js"></script>
-    <script type="text/javascript" src="js/SmoothScroll.js"></script>
-    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
-    <script type="text/javascript" src="js/jquery.isotope.js"></script>
-    <script type="text/javascript" src="js/owl.carousel.js"></script>
-    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
-    <script type="text/javascript" src="js/contact_me.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="{!! asset('asset/asset2/js/jquery.1.11.1.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('asset/aseet2/js/bootstrap.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('asset/asset2/js/SmoothScroll.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('asset/asset2/js/nivo-lightbox.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('asset/asset2/js/jquery.isotope.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('asset/asset2/js/owl.carousel.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('asset/asset2/js/jqBootstrapValidation.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('asset/asset2/js/contact_me.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('asset/asset2/js/main.js') !!}"></script>
 </body>
 
 </html>

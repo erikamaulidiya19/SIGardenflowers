@@ -10,7 +10,7 @@
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Flowers</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Bunga Paling disukai Perempuan</a></h4>
+                <h4 class="card-title mb-4"><a class="text-white" href="/user">10 Bunga Paling disukai Perempuan</a></h4>
                 <a class="btn btn-outline-light" href="/">read more</a>
               </div>
             </div>
@@ -22,7 +22,7 @@
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Bucket</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Desain Bucket Terlaris Terjual</a></h4>
+                <h4 class="card-title mb-4"><a class="text-white" href="/user">10 Desain Bucket Terlaris Terjual</a></h4>
                 <a class="btn btn-outline-light" href="blog-single.html">read more</a>
               </div>
             </div>
@@ -34,7 +34,7 @@
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Cake</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Kue Paling Diminati</a></h4>
+                <h4 class="card-title mb-4"><a class="text-white" href="/user">10 Kue Paling Diminati</a></h4>
                 <a class="btn btn-outline-light" href="blog-single.html">read more</a>
               </div>
             </div>
@@ -46,7 +46,7 @@
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Tanaman Hias</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Tanaman Hias Terindah</a></h4>
+                <h4 class="card-title mb-4"><a class="text-white" href="/user">10 Tanaman Hias Terindah</a></h4>
                 <a class="btn btn-outline-light" href="blog-single.html">read more</a>
               </div>
             </div>
@@ -58,7 +58,7 @@
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Buah</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Buah yang Paling diminati</a></h4>
+                <h4 class="card-title mb-4"><a class="text-white" href="/user">10 Buah yang Paling diminati</a></h4>
                 <a class="btn btn-outline-light" href="blog-single.html">read more</a>
               </div>
             </div>
@@ -75,148 +75,60 @@
       <div class="row masonry-container">
         <div class="col-lg-4 col-sm-6 mb-5">
           <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-1.jpg')}}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
+            <img class="img-fluid mb-4" src="{{ asset('asset/images/toko.jpg')}}" alt="post-thumb">
+            <p class="text-uppercase mb-2">Flowers Store</p>
+            <h4 class="title-border"><a class="text-dark" href="/">Toko Bunga di Banjarmasin</a></h4>
+            <p>Jelajahi sekarang untuk menemukan toko - toko bunga di wilayah Banjarmasin</p>
+            <a href="blog-single.html" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
         <div class="col-lg-4 col-sm-6 mb-5">
           <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-2.jpg')}}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
+            <img class="img-fluid mb-4" src="{{ asset('asset/images/caffe.jpg')}}" alt="post-thumb">
+            <p class="text-uppercase mb-2">Caffe</p>
+            <h4 class="title-border"><a class="text-dark" href="/">Tempat Nongkrong di Banjarmasin</a></h4>
+            <p>Jelajahi sekarang untuk menemukan tempat nongki di wilayah Banjarmasin yang sesuai dengan moodmu</p>
+            <a href="blog-single.html" class="btn btn-transparent">Jelajahi</a>
+          </article>
+        </div>
+
+        <div class="col-lg-4 col-sm-6 mb-5">
+          <article class="text-center">
+            <img class="img-fluid mb-4" src="{{ asset('asset/images/green.jpg') }}" alt="post-thumb">
+            <p class="text-uppercase mb-2">Greenhouse</p>
+            <h4 class="title-border"><a class="text-dark" href="/">Rumah Kaca</a></h4>
+            <p>Lihat beberapa rumah kaca yang dipenuhi dengan tumbuhan yang indah dan bermanfaat</p>
+            <a href="blog-single.html" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
         <div class="col-lg-4 col-sm-6 mb-5">
           <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('images/masonary-post/post-3.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
+            <img class="img-fluid mb-4" src="{{ asset ('asset/images/tanaman.jpg') }}" alt="post-thumb">
+            <p class="text-uppercase mb-2">Decorative Plants</p>
+            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Tanaman Hias</a></h4>
+            <p>Jelajahi tempat - tempat yang menyediakan dan menjual tanaman hias di wilayah Banjarmasin</p>
+            <a href="blog-single.html" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
         <div class="col-lg-4 col-sm-6 mb-5">
           <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-4.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
+            <img class="img-fluid mb-4" src="{{ asset ('asset/images/buahtok.jpg') }}" alt="post-thumb">
+            <p class="text-uppercase mb-2">Fruits Store</p>
+            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Toko Buah di Banjarmasin</a></h4>
+            <p>Mari kenali dan jelajahi toko - toko buah di wilayah Banjarmasin yang buka hingga dimalam hari</p>
+            <a href="blog-single.html" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
         <div class="col-lg-4 col-sm-6 mb-5">
           <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-5.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
+            <img class="img-fluid mb-4" src="{{ asset('asset/images/tokbuk.jpg') }}" alt="post-thumb">
+            <p class="text-uppercase mb-2">Buckets Store</p>
+            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Bucket Bunga</a></h4>
+            <p>Tunggu apalagi, segera mengetahui toko - toko bunga yang melayani pembuatan bucket untuk orang terkasih</p>
+            <a href="blog-single.html" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-6.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-7.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-8.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-9.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-10.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-11.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-13.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-12.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-      </div>
+
 
 @endsection()
 

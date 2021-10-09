@@ -50,24 +50,22 @@
 
     <div class="collapse navbar-collapse text-center" id="navogation">
       <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link text-uppercase text-dark" href="about">Home</a>
+        </li>
         <li class="nav-item dropdown">
-          <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown"
-            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Home
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="/">Homepage 1</a>
-            <a class="dropdown-item" href="homepage-2.html">Homepage 2</a>
-          </div>
-        </li>
+            <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/">Flowers</a>
+              <a class="dropdown-item" href="/">Plant</a>
+              <a class="dropdown-item" href="/">Caffe & Cake</a>
+            </div>
+          </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="category">Categories</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="contact">Contact</a>
+          <a class="nav-link text-uppercase text-dark" href="category">Contact</a>
         </li>
       </ul>
       <form class="form-inline position-relative ml-lg-4">
