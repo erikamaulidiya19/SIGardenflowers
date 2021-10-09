@@ -1,225 +1,93 @@
-@extends('Template1.master')
+<!DOCTYPE html>
+<html lang="en">
 
-@section ('header')
-<section>
-    <div class="container-fluid p-sm-0">
-      <div class="row featured-post-slider">
-        <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-          <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/mawar.jpg')}}" alt="post-thumb">
-            <div class="card-img-overlay">
-              <div class="card-content">
-                <p class="text-uppercase">Flowers</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Bunga Paling disukai Perempuan</a></h4>
-                <a class="btn btn-outline-light" href="/about">read more</a>
-              </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flowers</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
+    <link rel="icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{!! asset('asset/asset2/css/bootstrap.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('asset/asset2/fonts/font-awesome/css/font-awesome.css') !!}">
+
+    <!-- Slider
+    ================================================== -->
+    <link href="{!! asset('asset/asset2/css/owl.carousel.css') !!}" rel="stylesheet" media="screen">
+    <link href="{!! asset('asset/asset2/css/owl.theme.css') !!}" rel="stylesheet" media="screen">
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="{!! asset('asset/asset2/css/style.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('asset/asset2/css/nivo-lightbox/nivo-lightbox.css') !!}">
+    <link rel="stylesheet" type="text/css" href="{!! asset('asset/asset2/css/nivo-lightbox/default.css') !!}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Header -->
+    <header id="header">
+        <div class="intro">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 intro-text">
+                            <h1>WELCOME GARDENIA FLORIST</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Duis sed dapibus leo nec ornare diam.</p>
+                            <a href="/user" class="btn btn-custom btn-lg page-scroll">More Info</a> </div>
+                    </div>
+                </div>
             </div>
-          </article>
         </div>
-        <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-          <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/buket.jpg')}}" alt="post-thumb">
-            <div class="card-img-overlay">
-              <div class="card-content">
-                <p class="text-uppercase">Bucket</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Desain Bucket Terlaris Terjual</a></h4>
-                <a class="btn btn-outline-light" href="blog-single.html">read more</a>
-              </div>
+    </header>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-6">
+                    <div class="about-text">
+                        <h2>Welcome to <span>Landscaper</span></h2>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
+                        <a href="#services" class="btn btn-custom btn-lg page-scroll">View All Services</a> </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="about-media"> <img src="img/about-1.jpg" alt=" "> </div>
+                    <div class="about-desc">
+                        <h3>Garden Care</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-3">
+                    <div class="about-media"> <img src="img/about-2.jpg" alt=" "> </div>
+                    <div class="about-desc">
+                        <h3>Lawn Care</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante.</p>
+                    </div>
+                </div>
             </div>
-          </article>
         </div>
-        <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-          <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/cake.jpg')}}" alt="post-thumb">
-            <div class="card-img-overlay">
-              <div class="card-content">
-                <p class="text-uppercase">Cake</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Kue Paling Diminati</a></h4>
-                <a class="btn btn-outline-light" href="blog-single.html">read more</a>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-          <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="{{asset('asset/images/pot.jpg') }}" alt="post-thumb">
-            <div class="card-img-overlay">
-              <div class="card-content">
-                <p class="text-uppercase">Tanaman Hias</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Tanaman Hias Terindah</a></h4>
-                <a class="btn btn-outline-light" href="blog-single.html">read more</a>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-          <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/buah.jpg') }}" alt="post-thumb">
-            <div class="card-img-overlay">
-              <div class="card-content">
-                <p class="text-uppercase">Buah</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="blog-single.html">10 Buah yang Paling diminati</a></h4>
-                <a class="btn btn-outline-light" href="blog-single.html">read more</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
     </div>
-  </section>
-  <!-- /featured post -->
 
-  <!-- blog post -->
-  <section class="section">
-    <div class="container">
-      <div class="row masonry-container">
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-1.jpg')}}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-2.jpg')}}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('images/masonary-post/post-3.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-4.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-5.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-6.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-7.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-8.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/masonary-post/post-9.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-10.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-11.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-13.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/masonary-post/post-12.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">TRAVEL</p>
-            <h4 class="title-border"><a class="text-dark" href="blog-single.html">Charming Evening Field</a></h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-              ea commodo consequat.</p>
-            <a href="blog-single.html" class="btn btn-transparent">read more</a>
-          </article>
-        </div>
-      </div>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact_me.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
 
-@endsection()
-
-@section('content')
-
-@endsection()
+</html>
