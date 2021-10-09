@@ -11,6 +11,10 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function index()
+    {
+        return view('index');
+    }
     public function user()
     {
         return view('user');

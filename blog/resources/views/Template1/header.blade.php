@@ -51,7 +51,7 @@
     <div class="collapse navbar-collapse text-center" id="navogation">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="about">Home</a>
+          <a class="nav-link text-uppercase text-dark" href="/user">Home</a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown"
@@ -59,13 +59,13 @@
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/">Flowers</a>
-              <a class="dropdown-item" href="/">Plant</a>
-              <a class="dropdown-item" href="/">Caffe & Cake</a>
+              <a class="dropdown-item" href="/index">Flowers</a>
+              <a class="dropdown-item" href="/index">Plant</a>
+              <a class="dropdown-item" href="/index">Caffe & Cake</a>
             </div>
           </li>
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="category">Contact</a>
+          <a class="nav-link text-uppercase text-dark" href="/index">Contact</a>
         </li>
       </ul>
       <form class="form-inline position-relative ml-lg-4">
