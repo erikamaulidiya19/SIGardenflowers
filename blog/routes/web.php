@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\userController;
+use App\Http\Controllers\adminController;
+use App\Http\Controllers\bungaController;
 
 
 /*
@@ -20,27 +22,5 @@ Route::get('/', function () {
 });
 Route::get('/index',[userController::class,'index']);
 Route::get('/user',[userController::class,'user']);
-
-// Route::get('/user', function () {
-//     return view('user');
-// });
-
-// Route::get('/', function () {
-//     return view('blog');
-// });
-
-// Route::get('/', function () {
-//     return view('category');
-// });
-
-// Route::get('/', function () {
-//     return view('contact');
-// });
-
-// Route::get('/', function () {
-//     return view('homepage');
-// });
-
-// Route::get('/', function () {
-//     return view('search');
-// });
+Route::get('/admin',[adminController::class,'admin']);
+Route::get('/bunga',[bungaController::class,'bunga_backend']);
