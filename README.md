@@ -5,7 +5,7 @@ Nama : ERIKA MAULIDIYA <br>
 NIM  : 1810817220017
 </h3>
 <p align="center">
-    <img src="blog/public/asset/images/gf.png" width="1280" title="Sistem Informasi Gardenia Florist"/>
+    <img src="public/asset/images/gf.png" width="1280" title="Sistem Informasi Gardenia Florist"/>
 </p>
 
 ## Information
@@ -46,11 +46,7 @@ php artisan key:generate
 ```bash
 php artisan migrate
 ```
-9. run seeder
-```bash
-php artisan db:seeder
-```
-10. menjalankan situs web secara lokal
+9. menjalankan situs web secara lokal
 ```bash
 php artisan serve
 ```
