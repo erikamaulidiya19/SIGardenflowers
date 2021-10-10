@@ -1,8 +1,8 @@
 # Sistem Informasi Gardenia Florist
 
 <h3>
-Nama : ERIKA MAULIDIYA \
-NIM  : 1810817220017 \
+Nama : ERIKA MAULIDIYA <br>
+NIM  : 1810817220017
 </h3>
 <p align="center">
     <img src="blog/public/asset/images/gf.png" width="1280" title="Sistem Informasi Gardenia Florist"/>
@@ -11,9 +11,9 @@ NIM  : 1810817220017 \
 
 -`Sistem Informasi Gardenia Florist` Merupakan sistem informasi yang berisikan informasi data bunga, kue, dan caffe. 
 - memilihi 3 halaman, yaitu:
-- Landing Page \
-- Dasboard User \
-- Dasboard Admin (Tabel Data Bunga)\
+- Landing Page
+- Dasboard User
+- Dasboard Admin (Tabel Data Bunga)
 
 ## Requirements
 
