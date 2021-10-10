@@ -28,27 +28,29 @@ memiliki 3 halaman, yaitu:
 ```bash
 https://github.com/erikamaulidiya19/SIGardenflowers.git
 ```
-2. copy .env example menjadi .env
-2. siapkan database, masukan nama database kosong yang telah disediakan
-3. Instal dependensi PHP dengan `composer install`
-4. Instal Laravel melalui composer (instal local)
+2. Instal dependensi PHP dengan `composer install`
+3. Instal Laravel melalui composer (instal local)
 ```bash
 composer create-project laravel/laravel example-app
 ```
-5. generate key app laravel pada terminal
+4. Buka Project yang sudah diclone di Tools `Visual Studi Code` dengan `Open Folder` 
+5. siapkan database, masukan nama database kosong yang telah disediakan
+6. copy .env example menjadi .env
+
+7. generate key app laravel pada terminal
 
 ```bash
 php artisan key:generate
 ```
-6. migrate pada terminal
+8. migrate pada terminal
 ```bash
 php artisan migrate
 ```
-7. run seeder
+9. run seeder
 ```bash
 php artisan db:seeder
 ```
-8. menjalankan situs web secara lokal
+10. menjalankan situs web secara lokal
 ```bash
 php artisan serve
 ```
