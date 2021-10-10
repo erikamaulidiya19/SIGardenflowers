@@ -45,12 +45,6 @@
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="/">
-                            <i class="material-icons">person</i>
-                            <p>User Profile</p>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
                         <a class="nav-link" href="/index">
                             <i class="material-icons"></i>
                             <p>Blog</p>
@@ -100,29 +94,31 @@
                                                 <th>
                                                     Toko Bunga
                                                 </th>
-                                                <th>
+                                                <th><center>
                                                     Alamat
+                                                </center>
                                                 </th>
                                                 <th>
                                                     Aksi
                                                 </th>
                                             </thead>
                                             <tbody>
+                                                @php
+                                                $no=1;
+                                            @endphp
                                                 @foreach ($data as $item)
-
-
                                                 <tr>
                                                     <td>
-                                                        {{$item['id_bunga']}}
+                                                        {{$no++}}
                                                     </td>
                                                     <td>
-                                                        {{$item['id_bunga']}}
+                                                        {{$item->namabunga}}
                                                     </td>
                                                     <td>
-                                                        {{$item['id_bunga']}}
+                                                        {{$item->tokobunga}}
                                                     </td>
                                                     <td>
-                                                        {{$item['id_bunga']}}
+                                                        {{$item->alamatbunga}}
                                                     </td>
                                                     <td>
                                                         <center>  <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
@@ -131,176 +127,6 @@
                                                     </td>
                                                 </tr>
                                                 @endforeach
-                                                <tr>
-                                                    <td>
-                                                        2
-                                                    </td>
-                                                    <td>
-                                                        Mawar Putih
-                                                    </td>
-                                                    <td>
-                                                        Rama Florist
-                                                    </td>
-                                                    <td>
-                                                        Jl. Kolonel Sugiono, Kertak Baru Ilir, Banjarmasin, Kota Banjarmasin, Kalimantan Selatan 70234
-                                                    </td>
-                                                    <td>
-                                                        <center>  <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        3
-                                                    </td>
-                                                    <td>
-                                                        Matahari
-                                                    </td>
-                                                    <td>
-                                                        Yanti Orchids
-                                                    </td>
-                                                    <td>
-                                                        Komplek Distrik Navigasi No. 8, Jalan Belitung Darat, Banjarmasin, Belitung Utara, Banjarmasin Bar., Kota Banjarmasin, Kalimantan Selatan 70124
-                                                    </td>
-                                                    <td>
-                                                        <center>  <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                       <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        4
-                                                    </td>
-                                                    <td>
-                                                        Lili Putih
-                                                    </td>
-                                                    <td>
-                                                        Toko Bunga
-                                                    </td>
-                                                    <td>
-                                                        Jl. Cemara Raya Raya No. No.9 A
-                                                    </td>
-                                                    <td>
-                                                        <center> <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        5
-                                                    </td>
-                                                    <td>
-                                                        Tulip
-                                                    </td>
-                                                    <td>
-                                                        Toko Bunga Rama
-                                                    </td>
-                                                    <td>
-                                                        Jln. Kolonel Sugiono No.77, Kelayan Luar, Banjarmasin Tengah
-                                                    </td>
-                                                    <td>
-                                                        <center> <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        6
-                                                    </td>
-                                                    <td>
-                                                        Lili Kuning
-                                                    </td>
-                                                    <td>
-                                                        Persada Mas
-                                                    </td>
-                                                    <td>
-                                                        JL. Jenderal Ahmad Yani, Km. 1 No. 25B RT. 20
-                                                    </td>
-                                                    <td>
-                                                        <center> <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        7
-                                                    </td>
-                                                    <td>
-                                                        Mawar Merah Muda
-                                                    </td>
-                                                    <td>
-                                                        Toko Bunga
-                                                    </td>
-                                                    <td>
-                                                        Jl. Cemara Raya, RW.02
-                                                    </td>
-                                                    <td>
-                                                        <center> <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        8
-                                                    </td>
-                                                    <td>
-                                                        Edelweis
-                                                    </td>
-                                                    <td>
-                                                        Zanita
-                                                    </td>
-                                                    <td>
-                                                        Jln. Plamboyan 2
-                                                    </td>
-                                                    <td>
-                                                        <center> <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        9
-                                                    </td>
-                                                    <td>
-                                                        Sakura
-                                                    </td>
-                                                    <td>
-                                                        Alves House Flower Boutique
-                                                    </td>
-                                                    <td>
-                                                        Jalan Jend. A. Yani KM.4,5, Banjarmasin Selatan, Kebun Bunga, Banjarmasin, Kota Banjarmasin, Kalimantan Selatan 70235
-                                                    </td>
-                                                    <td>
-                                                        <center> <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        10
-                                                    </td>
-                                                    <td>
-                                                        Anggrek
-                                                    </td>
-                                                    <td>
-                                                        Toko Bunga Anggrek Bulan
-                                                    </td>
-                                                    <td>
-                                                        Jl. Kolonel Sugiono No.45
-                                                    </td>
-                                                    <td>
-                                                        <center> <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -308,7 +134,66 @@
                                 </div>
                             </div>
                         </div>
-<div class="col-md-12">
+{{-- <div class="col-md-12">
+    <div class="card">
+        <div class="card-header card-header-primary">
+            <h4 class="card-title ">Data Toko Kopi</h4>
+            <p class="card-category">Berisikan 10 data Toko Kopi</p>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead class=" text-primary">
+                        <th>
+                            ID
+                        </th>
+                        <th>
+                            Nama Kopi
+                        </th>
+                        <th>
+                            Caffe
+                        </th>
+                        <th><center>
+                            Alamat caffe
+                        </center>
+                        </th>
+                        <th>
+                            Aksi
+                        </th>
+                    </thead>
+                    <tbody>
+                        @php
+                        $no=1;
+                    @endphp
+                        @foreach ($kopi as $data)
+                        <tr>
+                            <td>
+                                {{$no++}}
+                            </td>
+                            <td>
+                                {{$data->namakopi}}
+                            </td>
+                            <td>
+                                {{$kopi->tokokopi}}
+                            </td>
+                            <td>
+                                {{$kopi->alamatkopi}}
+                            </td>
+                            <td>
+                                <center>  <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
+                                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
+                                 <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
+                            </td>
+                        </tr>
+                        @endforeach
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div> --}}
+{{-- <div class="col-md-12">
     <div class="card">
         <div class="card-header card-header-primary">
             <h4 class="card-title ">Simple Table</h4>
@@ -443,144 +328,7 @@
         </div>
     </div>
 </div>
-
-
-<div class="col-md-12">
-    <div class="card">
-        <div class="card-header card-header-primary">
-            <h4 class="card-title ">Simple Table</h4>
-            <p class="card-category"> Here is a subtitle for this table</p>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead class=" text-primary">
-                        <th>
-                            ID
-                        </th>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Country
-                        </th>
-                        <th>
-                            City
-                        </th>
-                        <th>
-                            Salary
-                        </th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                Dakota Rice
-                            </td>
-                            <td>
-                                Niger
-                            </td>
-                            <td>
-                                Oud-Turnhout
-                            </td>
-                            <td class="text-primary">
-                                $36,738
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                2
-                            </td>
-                            <td>
-                                Minerva Hooper
-                            </td>
-                            <td>
-                                Curaçao
-                            </td>
-                            <td>
-                                Sinaai-Waas
-                            </td>
-                            <td class="text-primary">
-                                $23,789
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                3
-                            </td>
-                            <td>
-                                Sage Rodriguez
-                            </td>
-                            <td>
-                                Netherlands
-                            </td>
-                            <td>
-                                Baileux
-                            </td>
-                            <td class="text-primary">
-                                $56,142
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                4
-                            </td>
-                            <td>
-                                Philip Chaney
-                            </td>
-                            <td>
-                                Korea, South
-                            </td>
-                            <td>
-                                Overland Park
-                            </td>
-                            <td class="text-primary">
-                                $38,735
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                5
-                            </td>
-                            <td>
-                                Doris Greene
-                            </td>
-                            <td>
-                                Malawi
-                            </td>
-                            <td>
-                                Feldkirchen in Kärnten
-                            </td>
-                            <td class="text-primary">
-                                $63,542
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                6
-                            </td>
-                            <td>
-                                Mason Porter
-                            </td>
-                            <td>
-                                Chile
-                            </td>
-                            <td>
-                                Gloucester
-                            </td>
-                            <td class="text-primary">
-                                $78,615
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-    <!--   Core JS Files   -->
+    <!--   Core JS Files   --> --}}
     <script src="{!! asset('asset/asset3/js/core/jquery.min.js') !!}"></script>
     <script src="{!! asset('asset/asset3/js/core/popper.min.js') !!}"></script>
     <script src="{!! asset('asset/asset3/js/core/bootstrap-material-design.min.js') !!}"></script>

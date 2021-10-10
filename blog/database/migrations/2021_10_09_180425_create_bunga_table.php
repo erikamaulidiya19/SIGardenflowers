@@ -13,7 +13,7 @@ class CreateBungaTable extends Migration
      */
     public function up()
     {
-        Schema::create('bunga', function (Blueprint $table) {
+        Schema::create('flowers', function (Blueprint $table) {
             $table->id('id_bunga');
             $table->string('namabunga');
             $table->string('tokobunga');
@@ -29,6 +29,6 @@ class CreateBungaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('bunga');
+        Schema::dropIfExists('flowers');
     }
 }

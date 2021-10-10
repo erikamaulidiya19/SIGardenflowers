@@ -13,7 +13,7 @@ class CreateKopiTable extends Migration
      */
     public function up()
     {
-        Schema::create('kopi', function (Blueprint $table) {
+        Schema::create('caffes', function (Blueprint $table) {
             $table->id('id_kopi');
             $table->string('namakopi');
             $table->string('tokokopi');
@@ -29,6 +29,6 @@ class CreateKopiTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kopi');
+        Schema::dropIfExists('caffes');
     }
 }

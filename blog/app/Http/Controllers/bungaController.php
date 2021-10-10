@@ -1,9 +1,12 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Bunga;
+use App\Models\Flower;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
+use Monolog\Handler\FlowdockHandler;
+
 class bungaController extends Controller
 {
     /**
@@ -13,7 +16,7 @@ class bungaController extends Controller
      */
     public function bunga_backend()
     {
-        $data = Bunga::all();
-        return view('bunga.bunga_backend', compact('bungq'));
+        $data = Flower::all();
+        return view('admin',compact('data'));
     }
 }

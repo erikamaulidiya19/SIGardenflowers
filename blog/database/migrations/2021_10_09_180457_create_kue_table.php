@@ -13,7 +13,7 @@ class CreateKueTable extends Migration
      */
     public function up()
     {
-        Schema::create('kue', function (Blueprint $table) {
+        Schema::create('cakes', function (Blueprint $table) {
             $table->id('id_kue');
             $table->string('namakue');
             $table->string('tokokue');
@@ -29,6 +29,6 @@ class CreateKueTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('kue');
+        Schema::dropIfExists('cakes');
     }
 }
