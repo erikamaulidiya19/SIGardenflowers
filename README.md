@@ -24,22 +24,31 @@ memiliki 3 halaman, yaitu:
 - Bootstrap 4/5
 
 ## Installation
-Clone Repo gitHub ini
+1. Clone Repo gitHub
 ```bash
 https://github.com/erikamaulidiya19/SIGardenflowers.git
 ```
-1. copy .env example menjadi .env
-2. masukan nama database kosong yang telah disediakan
-3. generate key app laravel pada terminal
+2. copy .env example menjadi .env
+2. siapkan database, masukan nama database kosong yang telah disediakan
+3. Instal dependensi PHP dengan `composer install`
+4. Instal Laravel melalui composer (instal local)
+```bash
+composer create-project laravel/laravel example-app
+```
+5. generate key app laravel pada terminal
 
 ```bash
 php artisan key:generate
 ```
-4.migrate pada terminal
+6. migrate pada terminal
 ```bash
 php artisan migrate
 ```
-5.run seeder
+7. run seeder
 ```bash
 php artisan db:seeder
+```
+8. menjalankan situs web secara lokal
+```bash
+php artisan serve
 ```
