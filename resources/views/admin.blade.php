@@ -33,7 +33,7 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-            <div class="logo"><a href="/admin" class="simple-text logo-normal">
+            <div class="logo"><a href="/index" class="simple-text logo-normal">
           GARDENIA FLORIST
         </a></div>
             <div class="sidebar-wrapper">
