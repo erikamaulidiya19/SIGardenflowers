@@ -17,5 +17,5 @@ Route::get('/admin',[adminController::class,'admin']);
 Route::get('/admin',[bungaController::class,'bunga_backend']);
 Route::get('/login',[loginController::class,'login']);
 Route::get('/regis',[regisController::class,'regis']);
-Route::post('/regis',[regisController::class,'store']);
+Route::post('/regis-user', [regiscontroller::class, 'store']);
 

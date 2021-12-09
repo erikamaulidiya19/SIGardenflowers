@@ -33,7 +33,7 @@
 			      		</div>
 
 			      	</div>
-							<form action="/regis" class="signin-form" method="post">
+							<form action="/regis-user" class="signin-form" method="post">
                                 @csrf
 			      		<div class="form-group mt-3">
 			      			<input type="text" name="name" class="form-control @error('name')is-invalid @enderror" id="name" required value="{{ old('name') }}">
@@ -64,7 +64,7 @@
                         </div>
 
 		            <div class="form-group">
-		              <input id="password-field" type="password" class="form-control"@error('password')is-invalid @enderror id="password" required>
+		              <input id="password-field" type="password" name="password"class="form-control"@error('password')is-invalid @enderror id="password" required>
 		              <label class="form-control-placeholder" for="password">Password</label>
 		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                       @error('password')

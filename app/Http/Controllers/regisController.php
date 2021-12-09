@@ -12,15 +12,22 @@ class regisController extends Controller
     }
     public function store(Request $request)
     {
-       $validatedData = $request->validate([
-        'name' => 'required|min:5|max:100',
-        'email'=>'required|email:dns|unique:users',
-        'username' => 'required|min:3|max:100|unique:users',
-        'password'=> 'required|min:5|max:20'
+       $request->validate([
+        'name'=>'required',
+        'email'=>'required',
+        'username'=>'required',
+        'password'=>'required',
+
        ]);
 
-       User::create($validatedData);
+       User::insert([
+           'name'=> $request->input('name'),
+           'email'=> $request->input('email'),
+           'username'=> $request->input('username'),
+           'password'=> $request->input('password'),
 
+       ]);
+       return view('login');
     }
 
 }
