@@ -33,29 +33,50 @@
 			      		</div>
 
 			      	</div>
-							<form action="#" class="signin-form">
+							<form action="/regis" class="signin-form" method="post">
+                                @csrf
 			      		<div class="form-group mt-3">
-			      			<input type="text" class="form-control" required>
-			      			<label class="form-control-placeholder" for="username">Name</label>
+			      			<input type="text" name="name" class="form-control @error('name')is-invalid @enderror" id="name" required value="{{ old('name') }}">
+			      			<label class="form-control-placeholder" for="name">Name</label>
+                              @error('name')
+                              <div class="invalid-feedback">
+                                  {{ $message }}
+                              </div>
+                              @enderror
 			      		</div>
                           <div class="form-group mt-3">
-                            <input type="text" class="form-control" required>
-                            <label class="form-control-placeholder" for="username">Email</label>
+                            <input type="email" name="email" class="form-control @error('email')is-invalid @enderror" id="email" required value="{{ old('email') }}">
+			      			<label class="form-control-placeholder" for="username">Email Address</label>
+                              @error('email')
+                              <div class="invalid-feedback">
+                                  {{ $message }}
+                              </div>
+                              @enderror
                         </div>
                         <div class="form-group mt-3">
-                            <input type="text" class="form-control" required>
-                            <label class="form-control-placeholder" for="username">Username</label>
+                            <input type="text" name="username" class="form-control @error('username')is-invalid @enderror" id="username" required value="{{ old('username') }}">
+                            <label class="form-control-placeholder" for="name">Username</label>
+                            @error('username')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                            @enderror
                         </div>
 
 		            <div class="form-group">
-		              <input id="password-field" type="password" class="form-control" required>
+		              <input id="password-field" type="password" class="form-control"@error('password')is-invalid @enderror id="password" required>
 		              <label class="form-control-placeholder" for="password">Password</label>
 		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                      @error('password')
+                      <div class="invalid-feedback">
+                          {{ $message }}
+                      </div>
+                      @enderror
 		            </div>
 		            <div class="form-group">
-		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Save</button>
+		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3">Submit</button>
 		        </div>
-                <p class="text-center"><a href="/login">Kembali</a></p>
+                <p class="text-center"><a href="/login">Back</a></p>
 		      </div>
 
 				</div>

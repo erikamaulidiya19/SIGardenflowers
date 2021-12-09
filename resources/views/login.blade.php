@@ -60,9 +60,9 @@
 									</div>
 		            </div>
 		          </form>
-		          <p class="text-center">Not a member? <a href="/regis">Sign Up</a></p>
+		          <p class="text-center">Not a member? <a href="/regis">Register</a></p>
 		        </div>
-                <p class="text-center"><a href="/index">Kembali</a></p>
+                <p class="text-center"><a href="/index">Back</a></p>
 		      </div>
 
 				</div>
