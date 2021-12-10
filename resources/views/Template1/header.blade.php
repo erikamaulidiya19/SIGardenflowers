@@ -64,9 +64,12 @@
               <a class="dropdown-item" href="/index">Caffe & Cake</a>
             </div>
           </li>
+
+          <form action="/logout" method="post">
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="/index">Contact</a>
+          <a class="nav-link text-uppercase text-dark" href="/index">Logout</a>
         </li>
+          </form>
       </ul>
       <form class="form-inline position-relative ml-lg-4">
         <input class="form-control px-0 w-100" type="search" placeholder="Search">

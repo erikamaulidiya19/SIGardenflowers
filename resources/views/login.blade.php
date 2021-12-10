@@ -20,6 +20,22 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
+
+                    @if(session()->has('success'))
+
+                    <div class="alert alert-success" role="alert">
+                        {{ session('success') }}
+                      </div>
+                    @endif
+
+
+                    @if(session()->has('loginError'))
+
+                    <div class="alert alert-danger" role="alert">
+                        {{ session('loginError') }}
+                      </div>
+                    @endif
+
 					<h2 class="heading-section">LOGIN</h2>
 				</div>
 			</div>
@@ -34,14 +50,15 @@
 			      		</div>
 
 			      	</div>
-							<form action="#" class="signin-form">
+							<form action="/login-user" class="signin-form" method="post">
+                                @csrf
 			      		<div class="form-group mt-3">
-			      			<input type="text" class="form-control" required>
+			      			<input type="text" name="username" class="form-control" id="username" required>
 			      			<label class="form-control-placeholder" for="username">Username</label>
 			      		</div>
 
 		            <div class="form-group">
-		              <input id="password-field" type="password" class="form-control" required>
+		              <input id="password-field" type="password" name="password" class="form-control" id="password" required>
 		              <label class="form-control-placeholder" for="password">Password</label>
 		              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 		            </div>
