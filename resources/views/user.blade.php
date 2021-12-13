@@ -9,7 +9,7 @@
             <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/mawar.jpg')}}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
-                <p class="text-uppercase">Flowers</p>
+                <p class="text-uppercase">Welcome</p>
                 <h4 class="card-title mb-4"><a class="text-white" href="/user">10 Bunga Paling disukai Perempuan</a></h4>
                 <a class="btn btn-outline-light" href="/index">read more</a>
               </div>
@@ -73,41 +73,16 @@
   <section class="section">
     <div class="container">
       <div class="row masonry-container">
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/toko.jpg')}}" alt="post-thumb">
-            <p class="text-uppercase mb-2">Flowers Store</p>
-            <h4 class="title-border"><a class="text-dark" href="/user">Toko Bunga di Banjarmasin</a></h4>
-            <p>Jelajahi sekarang untuk menemukan toko - toko bunga di wilayah Banjarmasin</p>
-            <a href="/index" class="btn btn-transparent">Jelajahi</a>
-          </article>
-        </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/caffe.jpg')}}" alt="post-thumb">
-            <p class="text-uppercase mb-2">Caffe</p>
-            <h4 class="title-border"><a class="text-dark" href="/user">Tempat Nongkrong di Banjarmasin</a></h4>
-            <p>Jelajahi sekarang untuk menemukan tempat nongki di wilayah Banjarmasin</p>
-            <a href="/index" class="btn btn-transparent">Jelajahi</a>
-          </article>
-        </div>
 
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset('asset/images/green.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">Greenhouse</p>
-            <h4 class="title-border"><a class="text-dark" href="/user">Rumah Kaca/Green House</a></h4>
-            <p>Lihat beberapa rumah kaca yang dipenuhi dengan tumbuhan yang indah dan bermanfaat</p>
-            <a href="/index" class="btn btn-transparent">Jelajahi</a>
-          </article>
-        </div>
+
+
         <div class="col-lg-4 col-sm-6 mb-5">
           <article class="text-center">
             <img class="img-fluid mb-4" src="{{ asset ('asset/images/tanaman.jpg') }}" alt="post-thumb">
             <p class="text-uppercase mb-2">Decorative Plants</p>
-            <h4 class="title-border"><a class="text-dark" href="/user">Tanaman Hias</a></h4>
+            <h4 class="title-border"><a class="text-dark" href="/tanamanhias">Tanaman Hias</a></h4>
             <p>Jelajahi tempat - tempat yang menyediakan dan menjual tanaman hias di wilayah Banjarmasin</p>
-            <a href="/index" class="btn btn-transparent">Jelajahi</a>
+            <a href="/tanamanhias" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
         <div class="col-lg-4 col-sm-6 mb-5">
@@ -128,6 +103,16 @@
             <a href="/index" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
+
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <article class="text-center">
+                  <img class="img-fluid mb-4" src="{{ asset('asset/images/caffe.jpg')}}" alt="post-thumb">
+                  <p class="text-uppercase mb-2">Cafe</p>
+                  <h4 class="title-border"><a class="text-dark" href="/user">Tempat Nongkrong di Banjarmasin</a></h4>
+                  <p>Jelajahi sekarang untuk menemukan tempat nongki di wilayah Banjarmasin</p>
+                  <a href="/index" class="btn btn-transparent">Jelajahi</a>
+                </article>
+              </div>
 
 
 @endsection()

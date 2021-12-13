@@ -6,6 +6,7 @@ use App\Http\Controllers\adminController;
 use App\Http\Controllers\bungaController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\regisController;
+use App\Http\Controllers\HiasController;
 
 
 Route::get('/', function () {
@@ -20,5 +21,5 @@ Route::get('/regis',[regisController::class,'regis']);
 Route::post('/regis-user', [regiscontroller::class, 'store']);
 Route::post('/login-user',[loginController::class,'aunt']);
 Route::post('/logout',[loginController::class,'logout']);
-
+Route::get('/tanamanhias',[HiasController::class,'tanamanhias']);
 
