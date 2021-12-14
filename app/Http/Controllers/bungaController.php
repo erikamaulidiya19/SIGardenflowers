@@ -14,9 +14,17 @@ class bungaController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function bunga(){
+            return view('bunga');
+    }
+
     public function bunga_backend()
     {
         $data = Flower::all();
-        return view('admin',compact('data'));
+        return view('adminbunga',compact('data'));
+    }
+
+    public function databunga(){
+        return view('tabelbunga');
     }
 }

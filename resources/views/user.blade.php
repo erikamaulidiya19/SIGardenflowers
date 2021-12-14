@@ -85,30 +85,33 @@
             <a href="/tanamanhias" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <article class="text-center">
-            <img class="img-fluid mb-4" src="{{ asset ('asset/images/buahtok.jpg') }}" alt="post-thumb">
-            <p class="text-uppercase mb-2">Fruits Store</p>
-            <h4 class="title-border"><a class="text-dark" href="/user">Toko Buah di Banjarmasin</a></h4>
-            <p>Mari kenali dan jelajahi toko - toko buah di wilayah Banjarmasin yang buka hingga dimalam hari</p>
-            <a href="/index" class="btn btn-transparent">Jelajahi</a>
-          </article>
-        </div>
+
         <div class="col-lg-4 col-sm-6 mb-5">
           <article class="text-center">
             <img class="img-fluid mb-4" src="{{ asset('asset/images/tokbuk.jpg') }}" alt="post-thumb">
             <p class="text-uppercase mb-2">Buckets Store</p>
-            <h4 class="title-border"><a class="text-dark" href="/user">Bucket Bunga</a></h4>
+            <h4 class="title-border"><a class="text-dark" href="/bunga">Bucket Bunga</a></h4>
             <p>Tunggu apalagi, segera mengetahui toko - toko bunga yang melayani pembuatan bucket untuk orang terkasih</p>
-            <a href="/index" class="btn btn-transparent">Jelajahi</a>
+            <a href="/bunga" class="btn btn-transparent">Jelajahi</a>
           </article>
         </div>
+
+        <div class="col-lg-4 col-sm-6 mb-5">
+            <article class="text-center">
+              <img class="img-fluid mb-4" src="{{ asset ('asset/images/buahtok.jpg') }}" alt="post-thumb">
+              <p class="text-uppercase mb-2">Fruits Store</p>
+              <h4 class="title-border"><a class="text-dark" href="/buah">Toko Buah di Banjarmasin</a></h4>
+              <p>Mari kenali dan jelajahi toko - toko buah di wilayah Banjarmasin yang buka hingga dimalam hari</p>
+              <a href="/index" class="btn btn-transparent">Jelajahi</a>
+            </article>
+          </div>
+
 
             <div class="col-lg-4 col-sm-6 mb-5">
                 <article class="text-center">
                   <img class="img-fluid mb-4" src="{{ asset('asset/images/caffe.jpg')}}" alt="post-thumb">
                   <p class="text-uppercase mb-2">Cafe</p>
-                  <h4 class="title-border"><a class="text-dark" href="/user">Tempat Nongkrong di Banjarmasin</a></h4>
+                  <h4 class="title-border"><a class="text-dark" href="/cafe">Tempat Nongkrong di Banjarmasin</a></h4>
                   <p>Jelajahi sekarang untuk menemukan tempat nongki di wilayah Banjarmasin</p>
                   <a href="/index" class="btn btn-transparent">Jelajahi</a>
                 </article>

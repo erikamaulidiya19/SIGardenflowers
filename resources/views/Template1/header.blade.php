@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Flowers</title>
+  <title>Welcome</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,9 +59,9 @@
               Categories
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/index">Flowers</a>
-              <a class="dropdown-item" href="/index">Plant</a>
-              <a class="dropdown-item" href="/index">Caffe & Cake</a>
+              <a class="dropdown-item" href="/bunga">Flowers</a>
+              <a class="dropdown-item" href="/tanamanhias">Plants</a>
+              <a class="dropdown-item" href="/cafe">Cafe & Cake</a>
             </div>
           </li>
 
@@ -71,11 +71,11 @@
         </li>
           </form>
       </ul>
-      <form class="form-inline position-relative ml-lg-4">
+      {{-- <form class="form-inline position-relative ml-lg-4">
         <input class="form-control px-0 w-100" type="search" placeholder="Search">
         <!-- <button class="search-icon" type="submit"><i class="ti-search text-dark"></i></button> -->
         <a href="search" class="search-icon"><i class="ti-search text-dark"></i></a>
-      </form>
+      </form> --}}
     </div>
   </nav>
 </header>

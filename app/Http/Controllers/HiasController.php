@@ -17,4 +17,7 @@ class HiasController extends Controller
     {
             return view('tanamanhias');
     }
+    public function datatanaman(){
+        return view('tabeltanaman');
+    }
 }

@@ -7,15 +7,9 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
 use Monolog\Handler\FlowdockHandler;
 
-class kopiController extends Controller
+class buahController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function kopi_backend()
-    {
-
+    public function databuah(){
+        return view('buah');
     }
 }

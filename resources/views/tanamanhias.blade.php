@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="shortcut icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
-    <link rel="icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
 	<head>
 		<title>Tanaman Hias</title>
 		<meta charset="utf-8">
@@ -26,7 +24,12 @@
 		<script src="{!! asset('asset/asset5/js/jquery.mobile.customized.min.js') !!}"></script>
 		<!--<![endif]-->
 		<script src="{!! asset('asset/asset5/booking/js/booking.js') !!}"></script>
+
 		<script>
+            $(document).ready(function(){
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			});
+
 			$(document).ready(function(){
 			jQuery('#camera_wrap').camera({
 				loader: false,
@@ -72,9 +75,9 @@
 					<div class="menu_block">
 						<nav class="horizontal-nav full-width horizontalNav-notprocessed">
 							<ul class="sf-menu">
-								<li class="current"><a href="index.html">Home</a></li>
-								<li><a href="index-1.html">Tempat Penjualan</a></li>
-								<li><a href="index-2.html">Tanaman Hias</a></li>
+								<li class="current"><a href="/user">Home</a></li>
+								<li><a href="/tabeltanaman">Tempat Penjualan</a></li>
+								<li><a href="/tabeltanaman">Tanaman Hias</a></li>
                                 <li><a href="index-1.html">About</a></li>
 								<li><a href="index-2.html">Contact</a></li>
 							</ul>
@@ -88,214 +91,194 @@
 			<div id="camera_wrap" class="">
 				<div data-src="{!! asset('asset/asset5/images/slide.jpg') !!}">
 					<div class="caption fadeIn">
-						<h2>LONDON</h2>
+						<h2>Kaktus Mini</h2>
 						<div class="price">
-							FROM
-							<span>$1000</span>
+							Harga
+							<span>Rp.5000 - Rp.40.000</span>
 						</div>
-						<a href="#">LEARN MORE</a>
 					</div>
 				</div>
 				<div data-src="{!! asset('asset/asset5/images/slide1.jpg') !!}">
 					<div class="caption fadeIn">
-						<h2>Maldives</h2>
+						<h2>Sansevieria</h2>
 						<div class="price">
-							FROM
-							<span>$2000</span>
+							Harga
+							<span>Rp.6.900 - Rp.70.000</span>
 						</div>
-						<a href="#">LEARN MORE</a>
+
 					</div>
 				</div>
 				<div data-src="{!! asset('asset/asset5/images/slide2.jpg') !!}">
 					<div class="caption fadeIn">
-						<h2>Venice</h2>
+						<h2>Monstera</h2>
 						<div class="price">
-							FROM
-							<span>$1600</span>
+							Harga
+							<span>Rp.12.000 - Rp.700.000</span>
 						</div>
-						<a href="#">LEARN MORE</a>
+
 					</div>
 				</div>
 			</div>
 		</div>
 <!--==============================Content=================================-->
-		<div class="content"><div class="ic">More Website Templates @ TemplateMonster.com - February 10, 2014!</div>
+		<div class="content">
 			<div class="container_12">
 				<div class="grid_4">
 					<div class="banner">
-						<img src="images/ban_img1.jpg" alt="">
+						<img src="{!! asset('asset/asset5/images/ban_img1.jpg') !!}" alt="">
 						<div class="label">
-							<div class="title">Barcelona</div>
-							<div class="price">FROM<span>$ 1000</span></div>
-							<a href="#">LEARN MORE</a>
+							<div class="title">Feather Cactus (Mammillaria plumosa)</div>
+							<div class="price">Harga<span>Rp.9.000</span></div>
 						</div>
 					</div>
 				</div>
 				<div class="grid_4">
 					<div class="banner">
-						<img src="images/ban_img2.jpg" alt="">
+						<img src="{!! asset ('asset/asset5/images/ban_img2.jpg') !!}" alt="">
 						<div class="label">
-							<div class="title">GOA</div>
-							<div class="price">FROM<span>$ 1.500</span></div>
-							<a href="#">LEARN MORE</a>
+							<div class="title">Kaktus Bulan (Gymnocalycium mihanovichii)</div>
+							<div class="price">Harga<span>Rp.30.000</span></div>
 						</div>
 					</div>
 				</div>
 				<div class="grid_4">
 					<div class="banner">
-						<img src="images/ban_img3.jpg" alt="">
+						<img src="{!! asset ('asset/asset5/images/ban_img3.jpg') !!}" alt="">
 						<div class="label">
-							<div class="title">PARIS</div>
-							<div class="price">FROM<span>$ 1.600</span></div>
-							<a href="#">LEARN MORE</a>
+							<div class="title">Parodia</div>
+							<div class="price">Harga<span>Rp.20.000</span></div>
 						</div>
 					</div>
 				</div>
-				<div class="clear"></div>
+
+
+                <div class="grid_4">
+					<div class="banner">
+						<img src="{!! asset ('asset/asset5/images/img1.jpg') !!}" alt="">
+						<div class="label">
+							<div class="title">Cryptanthus Red</div>
+							<div class="price">Harga<span>Rp.12.000</span></div>
+						</div>
+					</div>
+				</div>
+                <div class="grid_4">
+					<div class="banner">
+						<img src="{!! asset ('asset/asset5/images/img2.jpg') !!}" alt="">
+						<div class="label">
+							<div class="title">Haworthia</div>
+							<div class="price">Harga<span>Rp.20.000</span></div>
+						</div>
+					</div>
+				</div>
+                <div class="grid_4">
+					<div class="banner">
+						<img src="{!! asset ('asset/asset5/images/img3.jpg') !!}" alt="">
+						<div class="label">
+							<div class="title">Chinese Money Plant</div>
+							<div class="price">Harga<span>Rp.120.000</span></div>
+						</div>
+					</div>
+				</div>
+
+
+
+                <div class="grid_4">
+					<div class="banner">
+						<img src="{!! asset ('asset/asset5/images/img6.jpg') !!}" alt="">
+						<div class="label">
+							<div class="title">Begonia</div>
+							<div class="price">Harga<span>Rp.21.000</span></div>
+						</div>
+					</div>
+				</div>
+                <div class="grid_4">
+					<div class="banner">
+						<img src="{!! asset ('asset/asset5/images/img4.jpg') !!}" alt="">
+						<div class="label">
+							<div class="title">Calathea Cynthia</div>
+							<div class="price">Harga<span>Rp.95.000</span></div>
+						</div>
+					</div>
+				</div>
+                <div class="grid_4">
+					<div class="banner">
+						<img src="{!! asset ('asset/asset5/images/img5.jpg') !!}" alt="">
+						<div class="label">
+							<div class="title">Anthurium</div>
+							<div class="price">Harga<span>Rp.24.500</span></div>
+						</div>
+					</div>
+				</div>
+
+
+				{{-- <div class="clear"></div>
 				<div class="grid_6">
-					<h3>Booking Form</h3>
+					<h3>PESAN SEKARANG!</h3>
 					<form id="bookingForm">
 						<div class="fl1">
 							<div class="tmInput">
-								<input name="Name" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
+								<input name="Nama" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
 							</div>
 							<div class="tmInput">
-								<input name="Country" placeHolder="Country:" type="text" data-constraints="@NotEmpty @Required">
+								<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 						</div>
 						<div class="fl1">
 							<div class="tmInput">
-								<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required @Email">
+								<input name="Nomor Handphone" placeHolder="Nomor Handphone:" type="text" data-constraints="@NotEmpty @Required @Email">
 							</div>
 							<div class="tmInput mr0">
-								<input name="Hotel" placeHolder="Hotel:" type="text" data-constraints="@NotEmpty @Required">
+								<input name="Alamat" placeHolder="Alamat:" type="text" data-constraints="@NotEmpty @Required">
 							</div>
 						</div>
-						<div class="clear"></div>
-						<strong>Check-in</strong>
-						<label class="tmDatepicker">
-							<input type="text" name="Check-in" placeHolder='10/05/2014' data-constraints="@NotEmpty @Required @Date">
 						</label>
-						<div class="clear"></div>
-						<strong>Check-out</strong>
-						<label class="tmDatepicker">
-							<input type="text" name="Check-out" placeHolder='20/05/2014' data-constraints="@NotEmpty @Required @Date">
-						</label>
+
+                        <h5>Ukuran</h5>
 						<div class="clear"></div>
 						<div class="tmRadio">
-							<p>Comfort</p>
+
+                            <span>Bibit (Kecil)</span>
 							<input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
-							<span>Cheap</span>
+                            <span>Sedang</span>
 							<input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-							<span>Standart</span>
+                            <span>Besar</span>
 							<input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-							<span>Lux</span>
+
 						</div>
 						<div class="clear"></div>
 						<div class="fl1 fl2">
-							<em>Adults</em>
+							<h6>Jumlah</h6>
 							<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
 								<option>1</option>
-								<option>1</option>
 								<option>2</option>
 								<option>3</option>
-							</select>
-							<div class="clear"></div>
-							<em>Rooms</em>
-							<select name="Rooms" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option>1</option>
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-							</select>
-						</div>
-						<div class="fl1 fl2">
-							<em>Children</em>
-							<select name="Children" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option>0</option>
-								<option>0</option>
-								<option>1</option>
-								<option>2</option>
+								<option>4</option>
+                                <option>5</option>
 							</select>
 						</div>
 						<div class="clear"></div>
 						<div class="tmTextarea">
 							<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
 						</div>
-						<a href="#" class="btn" data-type="submit">Submit</a>
+						<a href="#" class="btn" data-type="submit">Pesan</a>
 					</form>
-				</div>
+				</div> --}}
 				<div class="grid_5 prefix_1">
 					<h3>Welcome</h3>
-					<img src="images/page1_img1.jpg" alt="" class="img_inner fleft">
+					<img src="{!! asset ('asset/asset5/images/page1_img1.png') !!}" alt="">
 					<div class="extra_wrapper">
-						<p>Lorem ipsum dolor sit ere amet, consectetur ipiscin.</p>
-						In mollis erat mattis neque facilisis, sit ametiol
+						<p>Selamat Datang dibagian Tanaman Hias</p>
+						Kami menyediakan informasi mengenai jenis tanaman hias dan harganya berdasarkan harga pasaran pada tahun ini.
 					</div>
 					<div class="clear cl1"></div>
-					<p>Find the detailed description of this <span class="col1"><a href="http://blog.templatemonster.com/free-website-templates/" rel="dofollow">freebie</a></span> at TemplateMonster blog.</p>
-					<p><span class="col1"><a href="http://www.templatemonster.com/category/travel-website-templates/" rel="nofollow">Travel Website Templates</a></span> category offers you a variety of designs that are perfect for travel sphere of business.</p>
-					Proin pharetra luctus diam, a scelerisque eros convallis
-					<h4>Clients’ Quotes</h4>
-					<blockquote class="bq1">
-						<img src="images/page1_img2.jpg" alt="" class="img_inner noresize fleft">
-						<div class="extra_wrapper">
-							<p>Duis massa elit, auctor non pellentesque vel, aliquet sit amet erat. Nullam eget dignissim nisi, aliquam feugiat nibh. </p>
-							<div class="alright">
-								<div class="col1">Miranda Brown</div>
-								<a href="#" class="btn">More</a>
-							</div>
-						</div>
-					</blockquote>
+					<p>Selain itu, kalian dapat melihat semua list tanaman hias dengan mengklik<span class="col1">Tanaman Hias</a></span> yang ada di menu pada halaman ini. Dan untuk mengetahui tempat penjualan tanaman hias di Banjarmasin dapat mengklik</p>
+					<p><span class="col1">Tempat Penjualan</a></span> pada menu.</p>
+					Terima kasih telah mengunjungi kami dan semoga hari kalian menyenangkan.
 				</div>
-				<div class="grid_12">
-					<h3 class="head1">Latest News</h3>
-				</div>
-				<div class="grid_4">
-					<div class="block1">
-						<time datetime="2014-01-01">10<span>Jan</span></time>
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Aliquam nibh</a></div>
-							Proin pharetra luctus diam, any scelerisque eros convallisumsan. Maecenas vehicula egestas
-						</div>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="block1">
-						<time datetime="2014-01-01">21<span>Jan</span></time>
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">Etiam dui eros</a></div>
-							Any scelerisque eros vallisumsan. Maecenas vehicula egestas natis. Duis massa elit, auctor non
-						</div>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="block1">
-						<time datetime="2014-01-01">15<span>Feb</span></time>
-						<div class="extra_wrapper">
-							<div class="text1 col1"><a href="#">uamnibh Edeto</a></div>
-							Ros convallisumsan. Maecenas vehicula egestas venenatis. Duis massa elit, auctor non
-						</div>
-					</div>
-				</div>
+
 			</div>
 		</div>
-<!--==============================footer=================================-->
-		<footer>
-			<div class="container_12">
-				<div class="grid_12">
-					<div class="socials">
-						<a href="#" class="fa fa-facebook"></a>
-						<a href="#" class="fa fa-twitter"></a>
-						<a href="#" class="fa fa-google-plus"></a>
-					</div>
-					<div class="copy">
-						Your Trip (c) 2014 | <a href="#">Privacy Policy</a> | Website Template Designed by <a href="http://www.templatemonster.com/" rel="nofollow">TemplateMonster.com</a>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<script>
+		{{-- <script>
 			$(function (){
 				$('#bookingForm').bookingForm({
 					ownerEmail: '#'
@@ -304,7 +287,7 @@
 			$(function() {
 				$('#bookingForm input, #bookingForm textarea').placeholder();
 			});
-		</script>
+		</script> --}}
 	</body>
 </html>
 
