@@ -27,4 +27,27 @@ class bungaController extends Controller
     public function databunga(){
         return view('tabelbunga');
     }
+
+    public function viewinsert(){
+        return view('insertbunga');
+    }
+    public function tambahbunga(Request $request){
+        $validatedData =  $request->validate([
+            'namabunga'=>'required',
+            'tokobunga'=>'required',
+            'alamatbunga'=>'required',
+
+           ]);
+           Flower::insert([
+                   'namabunga'=> $request->input('namabunga'),
+                   'tokobunga'=> $request->input('tokobunga'),
+                   'alamatbunga'=> $request->input('alamatbunga'),
+
+               ]);
+
+           $request->session()->flash('success','Tambah Data Berhasil');
+
+           return redirect('/adminbunga');
+    }
+
 }

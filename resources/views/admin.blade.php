@@ -50,15 +50,15 @@
       <div class="sidebar-wrapper">
         <ul class="nav">
           <li class="nav-item active  ">
-            <a class="nav-link" href="./admin">
+            <a class="nav-link" href="/admin">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./adminbunga">
+            <a class="nav-link" href="/adminbunga">
               <i class="material-icons"></i>
-              <p>Table Bunga</p>
+              <p>Data Bunga</p>
             </a>
           </li>
 

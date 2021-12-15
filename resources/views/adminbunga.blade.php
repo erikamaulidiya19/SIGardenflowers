@@ -21,8 +21,6 @@
     <link href="{!! asset('asset/asset3/css/material-dashboard.css?v=2.1.0') !!}" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="{!! asset('asset/asset3/demo/demo.css') !!}" rel="stylesheet" />
-
-
 </head>
 
 <body class="dark-edition">
@@ -39,28 +37,38 @@
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="nav-item active  ">
-                        <a class="nav-link" href="./admin">
+                        <a class="nav-link" href="/admin">
                           <i class="material-icons">dashboard</i>
                           <p>Dashboard</p>
                         </a>
                       </li>
                       <li class="nav-item ">
-                        <a class="nav-link" href="./adminbunga">
+                        <a class="nav-link" href="/adminbunga">
                           <i class="material-icons"></i>
-                          <p>Table Bunga</p>
+                          <p>Data Bunga</p>
                         </a>
                       </li>
                 </ul>
             </div>
         </div>
+
+
         <div class="main-panel">
+            @if(session()->has('success'))
+
+            <div class="alert alert-success" role="alert">
+                {{ session('success') }}
+              </div>
+            @endif
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">
                 <div class="container-fluid">
                     <div class="navbar-wrapper">
-                        <a class="navbar-brand" href="javascript:void(0)">Tabel Bunga</a>
+                        <a class="navbar-brand" href="javascript:void(0)"></a>
                     </div>
+
                     <div class="collapse navbar-collapse justify-content-end">
+
                     </div>
                 </div>
             </nav>
@@ -71,10 +79,12 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Data Toko Bunga</h4>
-                                    <p class="card-category">Berisikan 10 data terfavorit dan Toko bunga</p>
+                                    <h4 class="card-title ">Data Bunga</h4>
+                                    <p class="card-category"></p>
                                 </div>
                                 <div class="card-body">
+            <td class="border-bottom-0"><a href="/insertbunga" class="btn btn-primary">Tambah Data</a></td>
+
                                     <div class="table-responsive">
                                         <table class="table">
                                             <thead class=" text-primary">
@@ -91,8 +101,9 @@
                                                     Alamat
                                                 </center>
                                                 </th>
-                                                <th>
+                                                <th> <center>
                                                     Aksi
+                                                    </center>
                                                 </th>
                                             </thead>
                                             <tbody>
@@ -113,11 +124,9 @@
                                                     <td>
                                                         {{$item->alamatbunga}}
                                                     </td>
-                                                    <td>
-                                                        <center>  <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                                        <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                                         <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                                                    </td>
+                                                    <td class="border-bottom-0"><a href="#" class="btn btn-primary">Edit</a></td>
+                                                    <td class="border-bottom-0"><a href="#" class="btn btn-primary">View</a></td>
+                                                    <td class="border-bottom-0"><a href="#" class="btn btn-primary">Delete</a></td>
                                                 </tr>
                                                 @endforeach
                                                 </tr>

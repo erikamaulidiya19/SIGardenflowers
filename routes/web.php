@@ -32,3 +32,5 @@ Route::get('/tabelbunga',[bungaController::class,'databunga']);
 Route::get('/buah',[buahController::class,'databuah']);
 Route::get('/cafe',[cafeController::class,'datacafe']);
 
+Route::get('/insertbunga',[bungaController::class,'viewinsert']);
+Route::post('/databunga',[bungaController::class,'tambahbunga']);
