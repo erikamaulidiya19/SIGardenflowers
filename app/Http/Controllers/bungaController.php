@@ -50,4 +50,9 @@ class bungaController extends Controller
            return redirect('/adminbunga');
     }
 
+    public function hapusbunga(Flower $post){
+        Flower::where('id_bunga', $post->id_bunga)->delete();
+
+    }
+
 }

@@ -82,6 +82,7 @@
                                     <h4 class="card-title ">Data Bunga</h4>
                                     <p class="card-category"></p>
                                 </div>
+
                                 <div class="card-body">
             <td class="border-bottom-0"><a href="/insertbunga" class="btn btn-primary">Tambah Data</a></td>
 
@@ -124,9 +125,11 @@
                                                     <td>
                                                         {{$item->alamatbunga}}
                                                     </td>
-                                                    <td class="border-bottom-0"><a href="#" class="btn btn-primary">Edit</a></td>
                                                     <td class="border-bottom-0"><a href="#" class="btn btn-primary">View</a></td>
-                                                    <td class="border-bottom-0"><a href="#" class="btn btn-primary">Delete</a></td>
+                                                    <td class="border-bottom-0"><a href="#" class="btn btn-primary">Edit</a></td>
+                                                    <form action="/deletebunga{{ $post->id_bunga }}" method="post">
+                                                        <td class="border-bottom-0" onclick="return confirm ('Anda yakin ingin menghapus data ini?')"><a href="#" class="btn btn-primary">Delete</a></td>
+                                                    </form>
                                                 </tr>
                                                 @endforeach
                                                 </tr>
