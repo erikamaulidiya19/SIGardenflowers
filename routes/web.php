@@ -34,4 +34,4 @@ Route::get('/cafe',[cafeController::class,'datacafe']);
 
 Route::get('/insertbunga',[bungaController::class,'viewinsert']);
 Route::post('/databunga',[bungaController::class,'tambahbunga']);
-Route::post('/deletebunga',[bungaController::class,'hapusbunga']);
+Route::delete('deletebunga/{id_bunga}',[bungaController::class,'hapusbunga']);

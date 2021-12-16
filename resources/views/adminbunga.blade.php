@@ -127,8 +127,9 @@
                                                     </td>
                                                     <td class="border-bottom-0"><a href="#" class="btn btn-primary">View</a></td>
                                                     <td class="border-bottom-0"><a href="#" class="btn btn-primary">Edit</a></td>
-                                                    <form action="/deletebunga{{ $post->id_bunga }}" method="post">
-                                                        <td class="border-bottom-0" onclick="return confirm ('Anda yakin ingin menghapus data ini?')"><a href="#" class="btn btn-primary">Delete</a></td>
+                                                    <form action="deletebunga/{{ $item->id_bunga }}" method="post">
+                                                        @csrf @method('delete')
+                                                        <td class="border-bottom-0" onclick="return confirm ('Anda yakin ingin menghapus data ini?')"><button type="submit" class="btn btn-primary">Delete</button></td>
                                                     </form>
                                                 </tr>
                                                 @endforeach
