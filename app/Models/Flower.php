@@ -10,6 +10,13 @@ use Laravel\Sanctum\HasApiTokens;
 
 class Flower extends Model
 {
-    protected $guarded =['id_bunga'];
+    protected $table = 'flowers';
 
+    protected $fillable = [
+        'namabunga',
+        'tokobunga',
+        'alamatbunga'
+    ];
+
+    protected $primaryKey = 'id_bunga';
 }

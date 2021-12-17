@@ -99,15 +99,19 @@ $(document).ready(function(){
 <!--==============================Content=================================-->
 		<div class="content">
 			<div class="container_12">
+                @foreach ($data as $item)
+
 				<div class="grid_4">
+
 					<div class="banner">
 						<img src="{!! asset('asset/asset5/images/b4.jpg') !!}" alt="">
 						<div class="label">
-							<div class="title">Bunga Mawar</div>
+                            <div class="title"> {{$item->namabunga}}</div>
 							<div class="price">Harga<span>Rp.20.000 (Pertangkai)</span></div>
 						</div>
 					</div>
 				</div>
+                @endforeach
 				<div class="grid_4">
 					<div class="banner">
 						<img src="{!! asset ('asset/asset5/images/b5.jpg') !!}" alt="">
