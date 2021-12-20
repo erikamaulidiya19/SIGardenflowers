@@ -44,7 +44,7 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
+      <div class="logo"><a href="/index" class="simple-text logo-normal">
         GARDENIA FLORIST
         </a></div>
       <div class="sidebar-wrapper">
@@ -61,13 +61,13 @@
               <p>Data Bunga</p>
             </a>
           </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="/adminhias">
+              <i class="material-icons"></i>
+              <p>Data Tanaman Hias</p>
+            </a>
+          </li>
 
-          <!-- <li class="nav-item active-pro ">
-                <a class="nav-link" href="./upgrade.html">
-                    <i class="material-icons">unarchive</i>
-                    <p>Upgrade to PRO</p>
-                </a>
-            </li> -->
         </ul>
       </div>
     </div>

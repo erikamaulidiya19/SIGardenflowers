@@ -36,16 +36,22 @@
         </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
-                    <li class="nav-item active  ">
+                    <li class="nav-item {{ Request::is('/admin') ? 'active' : '' }} ">
                         <a class="nav-link" href="/admin">
                           <i class="material-icons">dashboard</i>
                           <p>Dashboard</p>
                         </a>
                       </li>
-                      <li class="nav-item ">
+                      <li class="nav-item {{ Request::is('adminbunga') ? 'active' : '' }} ">
                         <a class="nav-link" href="/adminbunga">
                           <i class="material-icons"></i>
                           <p>Data Bunga</p>
+                        </a>
+                      </li>
+                      <li class="nav-item {{ Request::is('adminhias') ? 'active' : '' }} ">
+                        <a class="nav-link" href="/adminhias">
+                          <i class="material-icons"></i>
+                          <p>Data Tanaman Hias</p>
                         </a>
                       </li>
                 </ul>
@@ -99,7 +105,16 @@
                                                     Toko Bunga
                                                 </th>
                                                 <th><center>
+                                                    Harga
+                                                </center>
+                                                <th><center>
                                                     Alamat
+                                                </center>
+                                                </th>
+
+                                                </th>
+                                                <th><center>
+                                                    Image
                                                 </center>
                                                 </th>
                                                 <th> <center>
@@ -123,9 +138,15 @@
                                                         {{$item->tokobunga}}
                                                     </td>
                                                     <td>
+                                                        {{$item->harga}}
+                                                    </td>
+                                                    <td>
                                                         {{$item->alamatbunga}}
                                                     </td>
-                                                    <td class="border-bottom-0"><a href="#" class="btn btn-primary">View</a></td>
+                                                    <td>
+                                                      <img src="{{ asset('storage/'.$item->image) }}" alt="" width="100cm" height="100cm">
+
+                                                    </td>
                                                     <td class="border-bottom-0"><a href="updatebunga/{{ $item->id_bunga }}" class="btn btn-primary">Edit</a></td>
                                                     <form action="deletebunga/{{ $item->id_bunga }}" method="post">
                                                         @csrf
@@ -141,200 +162,6 @@
                                 </div>
                             </div>
                         </div>
-{{-- <div class="col-md-12">
-    <div class="card">
-        <div class="card-header card-header-primary">
-            <h4 class="card-title ">Data Toko Kopi</h4>
-            <p class="card-category">Berisikan 10 data Toko Kopi</p>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead class=" text-primary">
-                        <th>
-                            ID
-                        </th>
-                        <th>
-                            Nama Kopi
-                        </th>
-                        <th>
-                            Caffe
-                        </th>
-                        <th><center>
-                            Alamat caffe
-                        </center>
-                        </th>
-                        <th>
-                            Aksi
-                        </th>
-                    </thead>
-                    <tbody>
-                        @php
-                        $no=1;
-                    @endphp
-                        @foreach ($kopi as $data)
-                        <tr>
-                            <td>
-                                {{$no++}}
-                            </td>
-                            <td>
-                                {{$data->namakopi}}
-                            </td>
-                            <td>
-                                {{$kopi->tokokopi}}
-                            </td>
-                            <td>
-                                {{$kopi->alamatkopi}}
-                            </td>
-                            <td>
-                                <center>  <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE417;</i></a>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE254;</i></a>
-                                 <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons"style="font-size:14px">&#xE872;</i></a></center>
-                            </td>
-                        </tr>
-                        @endforeach
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div> --}}
-{{-- <div class="col-md-12">
-    <div class="card">
-        <div class="card-header card-header-primary">
-            <h4 class="card-title ">Simple Table</h4>
-            <p class="card-category"> Here is a subtitle for this table</p>
-        </div>
-        <div class="card-body">
-            <div class="table-responsive">
-                <table class="table">
-                    <thead class=" text-primary">
-                        <th>
-                            ID
-                        </th>
-                        <th>
-                            Name
-                        </th>
-                        <th>
-                            Country
-                        </th>
-                        <th>
-                            City
-                        </th>
-                        <th>
-                            Salary
-                        </th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                1
-                            </td>
-                            <td>
-                                Dakota Rice
-                            </td>
-                            <td>
-                                Niger
-                            </td>
-                            <td>
-                                Oud-Turnhout
-                            </td>
-                            <td class="text-primary">
-                                $36,738
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                2
-                            </td>
-                            <td>
-                                Minerva Hooper
-                            </td>
-                            <td>
-                                Curaçao
-                            </td>
-                            <td>
-                                Sinaai-Waas
-                            </td>
-                            <td class="text-primary">
-                                $23,789
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                3
-                            </td>
-                            <td>
-                                Sage Rodriguez
-                            </td>
-                            <td>
-                                Netherlands
-                            </td>
-                            <td>
-                                Baileux
-                            </td>
-                            <td class="text-primary">
-                                $56,142
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                4
-                            </td>
-                            <td>
-                                Philip Chaney
-                            </td>
-                            <td>
-                                Korea, South
-                            </td>
-                            <td>
-                                Overland Park
-                            </td>
-                            <td class="text-primary">
-                                $38,735
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                5
-                            </td>
-                            <td>
-                                Doris Greene
-                            </td>
-                            <td>
-                                Malawi
-                            </td>
-                            <td>
-                                Feldkirchen in Kärnten
-                            </td>
-                            <td class="text-primary">
-                                $63,542
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                6
-                            </td>
-                            <td>
-                                Mason Porter
-                            </td>
-                            <td>
-                                Chile
-                            </td>
-                            <td>
-                                Gloucester
-                            </td>
-                            <td class="text-primary">
-                                $78,615
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
     <!--   Core JS Files   --> --}}
     <script src="{!! asset('asset/asset3/js/core/jquery.min.js') !!}"></script>
     <script src="{!! asset('asset/asset3/js/core/popper.min.js') !!}"></script>

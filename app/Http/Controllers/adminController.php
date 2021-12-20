@@ -15,5 +15,7 @@ class adminController extends Controller
     {
         return view('admin');
     }
+    public function backadmin(){
 
+    }
 }

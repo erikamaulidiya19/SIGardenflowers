@@ -69,11 +69,11 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Tambah Data Bunga</h4>
+                                    <h4 class="card-title ">Update Data Bunga</h4>
                                     <p class="card-category"></p>
                                 </div>
                                 <div class="card-body">
-            <form action="/databunga" class="signin-form" method="post">
+            <form action="/databunga" class="signin-form" method="post" enctype="multipart/form-data">
                 @csrf
 
                 <input type="hidden" class="form-control" id="id_bunga" name="id_bunga" required value="{{ $data->id_bunga }}">
@@ -88,13 +88,26 @@
                 </div>
 
                 <div class="mb-3">
+                    <label for="harga" class="form-label">Harga</label>
+                    <input type="text" class="form-control" id="harga" name="harga"required value="{{ $data->harga}}">
+                  </div>
+
+                <div class="mb-3">
                     <label for="alamatbunga" class="form-label">Alamat Toko Bunga</label>
                     <input type="text" class="form-control" id="alamatbunga" name="alamatbunga"required value="{{ $data->alamatbunga }}">
                   </div>
 
 
 
-                <button type="submit" class="btn btn-primary">Tambah</button>
+                  <div class="mb-3">
+                    <label for="image" class="form-label">Upload Image</label>
+                    <input class="form-control" @error('image') is-invalid @enderror type="file" id="image" name="image">
+                    @error('image')
+                    <div class="invalid-feedback">
+                    </div>
+                    @enderror
+
+                <button type="submit" class="btn btn-primary">Update</button>
               </form>
             </div>
         </div>

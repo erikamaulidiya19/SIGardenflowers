@@ -20,4 +20,8 @@ class HiasController extends Controller
     public function datatanaman(){
         return view('tabeltanaman');
     }
+    public function datahias(){
+        return view('adminhias');
+    }
+
 }

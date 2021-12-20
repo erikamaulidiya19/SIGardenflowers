@@ -73,7 +73,7 @@
                                     <p class="card-category"></p>
                                 </div>
                                 <div class="card-body">
-            <form action="/databunga" class="signin-form" method="post">
+            <form action="/databunga" class="signin-form" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
                   <label for="namabunga" class="form-label">Nama Bunga</label>
@@ -83,6 +83,10 @@
                   <label for="tokobunga" class="form-label">Nama Toko Bunga</label>
                   <input type="text" class="form-control" id="tokobunga" name="tokobunga"required value="{{ old('tokobunga') }}">
                 </div>
+                <div class="mb-3">
+                    <label for="harga" class="form-label">Harga Bunga</label>
+                    <input type="text" class="form-control" id="harga" name="harga"required value="{{ old('harga') }}">
+                  </div>
 
                 <div class="mb-3">
                     <label for="alamatbunga" class="form-label">Alamat Toko Bunga</label>
@@ -90,6 +94,14 @@
                   </div>
 
 
+                  <div class="mb-3">
+                    <label for="image" class="form-label">Upload Image</label>
+                    <input class="form-control" @error('image') is-invalid @enderror type="file" id="image" name="image">
+                    @error('image')
+                    <div class="invalid-feedback">
+                    </div>
+                    @enderror
+                  </div>
 
                 <button type="submit" class="btn btn-primary">Tambah</button>
               </form>

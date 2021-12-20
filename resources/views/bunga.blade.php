@@ -104,145 +104,15 @@ $(document).ready(function(){
 				<div class="grid_4">
 
 					<div class="banner">
-						<img src="{!! asset('asset/asset5/images/b4.jpg') !!}" alt="">
+                        <img src="{{ asset('storage/'.$item->image) }}" alt="" width="640cm" height="300cm">
 						<div class="label">
                             <div class="title"> {{$item->namabunga}}</div>
-							<div class="price">Harga<span>Rp.20.000 (Pertangkai)</span></div>
+							<div class="price">Harga<span>Rp.{{$item->harga}}(Pertangkai)</span></div>
 						</div>
 					</div>
 				</div>
                 @endforeach
-				<div class="grid_4">
-					<div class="banner">
-						<img src="{!! asset ('asset/asset5/images/b5.jpg') !!}" alt="">
-						<div class="label">
-							<div class="title">Bunga Krisan</div>
-							<div class="price">Harga<span>Rp.25.000 - Rp.28.000 (Pertangkai)</span></div>
-						</div>
-					</div>
-				</div>
-				<div class="grid_4">
-					<div class="banner">
-						<img src="{!! asset ('asset/asset5/images/b6.jpg') !!}" alt="">
-						<div class="label">
-							<div class="title">Bunga Lily</div>
-							<div class="price">Harga<span>Rp.65.000 (Pertangkai)</span></div>
-						</div>
-					</div>
-				</div>
 
-
-                <div class="grid_4">
-					<div class="banner">
-						<img src="{!! asset ('asset/asset5/images/b7.jpg') !!}" alt="">
-						<div class="label">
-							<div class="title">Bunga Daisy</div>
-							<div class="price">Harga<span>Rp.32.000 (Pertangkai)</span></div>
-						</div>
-					</div>
-				</div>
-                <div class="grid_4">
-					<div class="banner">
-						<img src="{!! asset ('asset/asset5/images/b8.jpg') !!}" alt="">
-						<div class="label">
-							<div class="title">Bunga Baby's Breath</div>
-							<div class="price">Harga<span>Rp.9.000 (Pertangkai)</span></div>
-						</div>
-					</div>
-				</div>
-                <div class="grid_4">
-					<div class="banner">
-						<img src="{!! asset ('asset/asset5/images/img3.jpg') !!}" alt="">
-						<div class="label">
-							<div class="title">Bunga Lavender</div>
-							<div class="price">Harga<span>Rp.120.000</span></div>
-						</div>
-					</div>
-				</div>
-
-
-
-                <div class="grid_4">
-					<div class="banner">
-						<img src="{!! asset ('asset/asset5/images/b10.jpg') !!}" alt="">
-						<div class="label">
-							<div class="title">Bunga Pampas</div>
-							<div class="price">Harga<span>Rp.12.000</span></div>
-						</div>
-					</div>
-				</div>
-                <div class="grid_4">
-					<div class="banner">
-						<img src="{!! asset ('asset/asset5/images/b11.jpg') !!}" alt="">
-						<div class="label">
-							<div class="title">Bunga Carnation</div>
-							<div class="price">Harga<span>Rp.3.500</span></div>
-						</div>
-					</div>
-				</div>
-                <div class="grid_4">
-					<div class="banner">
-						<img src="{!! asset ('asset/asset5/images/b12.jpg') !!}" alt="">
-						<div class="label">
-							<div class="title">Bunga Tulip</div>
-							<div class="price">Harga<span>Rp.13.000</span></div>
-						</div>
-					</div>
-				</div>
-
-
-				{{-- <div class="clear"></div>
-				<div class="grid_6">
-					<h3>PESAN SEKARANG!</h3>
-					<form id="bookingForm">
-						<div class="fl1">
-							<div class="tmInput">
-								<input name="Nama" placeHolder="Name:" type="text" data-constraints='@NotEmpty @Required @AlphaSpecial'>
-							</div>
-							<div class="tmInput">
-								<input name="Email" placeHolder="Email:" type="text" data-constraints="@NotEmpty @Required">
-							</div>
-						</div>
-						<div class="fl1">
-							<div class="tmInput">
-								<input name="Nomor Handphone" placeHolder="Nomor Handphone:" type="text" data-constraints="@NotEmpty @Required @Email">
-							</div>
-							<div class="tmInput mr0">
-								<input name="Alamat" placeHolder="Alamat:" type="text" data-constraints="@NotEmpty @Required">
-							</div>
-						</div>
-						</label>
-
-                        <h5>Ukuran</h5>
-						<div class="clear"></div>
-						<div class="tmRadio">
-
-                            <span>Bibit (Kecil)</span>
-							<input name="Comfort" type="radio" id="tmRadio0" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' checked/>
-                            <span>Sedang</span>
-							<input name="Comfort" type="radio" id="tmRadio1" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-                            <span>Besar</span>
-							<input name="Comfort" type="radio" id="tmRadio2" data-constraints='@RadioGroupChecked(name="Comfort", groups=[RadioGroup])' />
-
-						</div>
-						<div class="clear"></div>
-						<div class="fl1 fl2">
-							<h6>Jumlah</h6>
-							<select name="Adults" class="tmSelect auto" data-class="tmSelect tmSelect2" data-constraints="">
-								<option>1</option>
-								<option>2</option>
-								<option>3</option>
-								<option>4</option>
-                                <option>5</option>
-							</select>
-						</div>
-						<div class="clear"></div>
-						<div class="tmTextarea">
-							<textarea name="Message" placeHolder="Message" data-constraints='@NotEmpty @Required @Length(min=20,max=999999)'></textarea>
-						</div>
-						<a href="#" class="btn" data-type="submit">Pesan</a>
-					</form>
-				</div> --}}
 				<div class="grid_5 prefix_1">
 					<h3>Welcome</h3>
 					<img src="{!! asset ('asset/asset5/images/page1_img1.png') !!}" alt="">
@@ -258,16 +128,7 @@ $(document).ready(function(){
 
 			</div>
 		</div>
-		{{-- <script>
-			$(function (){
-				$('#bookingForm').bookingForm({
-					ownerEmail: '#'
-				});
-			})
-			$(function() {
-				$('#bookingForm input, #bookingForm textarea').placeholder();
-			});
-		</script> --}}
+
 	</body>
 </html>
 

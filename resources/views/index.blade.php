@@ -61,7 +61,7 @@
                         <hr>
                         <p>Kami menyediakan informasi mengenai bunga serta penjualan bunga di wilayah Banjarmasin</p>
                         <p>Selain itu kami juga memberikan informasi mengenai caffe dan resto yang ada di wilayah Banjarmasin yang cocok untuk bersantai</p>
-                        <a href="/admin" class="btn btn-custom btn-lg page-scroll">Pelayanan</a> </div>
+                        <a href="/login" class="btn btn-custom btn-lg page-scroll">Pelayanan</a> </div>
                 </div>
                 <div class="col-xs-12 col-md-3">
                     <div class="about-media"> <img src="{!! asset('asset/asset2/img/bungaa.jpg') !!}" alt=" "> </div>

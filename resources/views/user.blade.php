@@ -10,8 +10,8 @@
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Welcome</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="/user">10 Bunga Paling disukai Perempuan</a></h4>
-                <a class="btn btn-outline-light" href="/index">read more</a>
+                <h4 class="card-title mb-4"><a class="text-white" href="/daftar">10 Bunga Paling disukai Perempuan</a></h4>
+                <a class="btn btn-outline-light" href="/daftar">read more</a>
               </div>
             </div>
           </article>
@@ -22,8 +22,8 @@
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Bucket</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="/user">10 Desain Bucket Terlaris Terjual</a></h4>
-                <a class="btn btn-outline-light" href="/index">read more</a>
+                <h4 class="card-title mb-4"><a class="text-white" href="/viewbunga">10 Desain Bucket Terlaris Terjual</a></h4>
+                <a class="btn btn-outline-light" href="/viewbunga">Jelajahi</a>
               </div>
             </div>
           </article>

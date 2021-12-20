@@ -18,6 +18,8 @@ class CreateBungaTable extends Migration
             $table->string('namabunga');
             $table->string('tokobunga');
             $table->string('alamatbunga');
+            $table->string('image')->nullable();
+            $table->string('harga');
             $table->timestamps();
         });
     }

@@ -15,7 +15,9 @@ class Flower extends Model
     protected $fillable = [
         'namabunga',
         'tokobunga',
-        'alamatbunga'
+        'alamatbunga',
+        'image',
+        'harga'
     ];
 
     protected $primaryKey = 'id_bunga';
