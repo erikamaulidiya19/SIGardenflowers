@@ -42,7 +42,7 @@
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 intro-text">
                             <h1>WELCOME GARDENIA FLORIST</h1>
-                            <p>Informasi mengenai penjualan bunga, tanaman dan buah ada disini.<br> Jelajahi dan dapatkan informasinya.</p>
+                            <p>Informasi mengenai penjualan bunga, bucket bunga dan tanaman hias ada disini.<br> Jelajahi dan dapatkan informasinya.</p>
                             <a href="/login" class="btn btn-custom btn-lg page-scroll">Login <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                               </svg></a> </div>
@@ -60,7 +60,7 @@
                         <h2>Welcome to <span>Gardenia Florist</span></h2>
                         <hr>
                         <p>Kami menyediakan informasi mengenai bunga serta penjualan bunga di wilayah Banjarmasin</p>
-                        <p>Selain itu kami juga memberikan informasi mengenai caffe dan resto yang ada di wilayah Banjarmasin yang cocok untuk bersantai</p>
+                        <p>Selain itu kami juga memberikan informasi mengenai tanaman hias yang ada di wilayah Banjarmasin yang cocok untuk menghias rumah anda semua</p>
                         <a href="/login" class="btn btn-custom btn-lg page-scroll">Pelayanan</a> </div>
                 </div>
                 <div class="col-xs-12 col-md-3">
@@ -71,10 +71,10 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <div class="about-media"> <img src="{!! asset('asset/asset2/img/kue.jpg') !!}" alt=" "> </div>
+                    <div class="about-media"> <img src="{!! asset('asset/images/tokbuk.jpg') !!}" alt=" "> </div>
                     <div class="about-desc">
-                        <h3>Kue</h3>
-                        <p>Informasi mengenai kumpulan kue yang paling cocok untuk mood mu sekarang</p>
+                        <h3>Tanaman Hias</h3>
+                        <p>Informasi mengenai kumpulan tanaman hias yang membantu untuk moodmu pulih kembali</p>
                     </div>
                 </div>
             </div>

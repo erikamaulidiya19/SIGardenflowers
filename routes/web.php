@@ -16,10 +16,9 @@ Route::get('/', function () {
 });
 Route::get('/index',[userController::class,'index']);
 Route::get('/user',[userController::class,'user']);
-Route::get('/admin',[adminController::class,'admin']);
-Route::get('/admin',[adminController::class,'backadmin']);
+Route::get('/admin',[adminController::class,'admin'])->name('admin');
 Route::get('/adminbunga',[bungaController::class,'bunga_backend']);
-
+Route::get('/adminuser',[adminController::class,'viewuser']);
 
 Route::get('/login',[loginController::class,'login']);
 Route::get('/regis',[regisController::class,'regis']);
@@ -33,7 +32,7 @@ Route::get('/bunga',[bungaController::class,'bunga']);
 Route::get('/tabeltanaman',[HiasController::class,'datatanaman']);
 Route::get('/tabelbunga',[bungaController::class,'databunga']);
 
-Route::get('/cafe',[cafeController::class,'datacafe']);
+
 
 Route::get('/insertbunga',[bungaController::class,'viewinsert']);
 Route::post('/databunga',[bungaController::class,'tambahbunga']);
@@ -41,3 +40,7 @@ Route::post('deletebunga/{id_bunga}',[bungaController::class,'hapusbunga']);
 Route::get('updatebunga/{id_bunga}',[bungaController::class,'editbunga']);
 
 Route::get('/adminhias',[HiasController::class,'datahias']);
+Route::get('/inserthias',[HiasController::class,'viewhias']);
+Route::post('/datatanaman',[HiasController::class,'tambahhias']);
+Route::post('deletehias/{id_hias}',[HiasController::class,'hapushias']);
+Route::get('updatehias/{id_hias}',[HiasController::class,'edithias']);

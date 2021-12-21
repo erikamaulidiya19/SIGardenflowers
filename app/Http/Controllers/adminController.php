@@ -15,7 +15,8 @@ class adminController extends Controller
     {
         return view('admin');
     }
-    public function backadmin(){
-
+    public function viewuser(){
+        $data = User::all();
+        return view('adminuser',compact('data'));
     }
 }

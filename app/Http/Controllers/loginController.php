@@ -20,8 +20,9 @@ class loginController extends Controller
             'password'=>'required'
         ]);
         if($request->username=="admin123"&& $request->password=="admin123"){
-          return redirect('/admin');
+          return redirect()->route('admin');
         }
+
         if(Auth::attempt($credentials)){
             $request->session()->regenerate();
             return redirect()->intended('/user');

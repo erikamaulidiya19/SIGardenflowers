@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKueTable extends Migration
+class CreateHiasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateKueTable extends Migration
      */
     public function up()
     {
-        Schema::create('cakes', function (Blueprint $table) {
-            $table->id('id_kue');
-            $table->string('namakue');
-            $table->string('tokokue');
-            $table->string('alamatkue');
+        Schema::create('hiass', function (Blueprint $table) {
+            $table->id('id_hias');
+            $table->string('namahias');
+            $table->string('tokohias');
+            $table->string('alamathias');
+            $table->string('imagehias')->nullable();
+            $table->string('hargahias');
             $table->timestamps();
         });
     }

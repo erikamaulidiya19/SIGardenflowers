@@ -95,8 +95,4 @@ class bungaController extends Controller
         return view('updatebunga', compact('data'));
     }
 
-    public function daftarbunga(){
-        return view('/daftar');
-    }
-
 }

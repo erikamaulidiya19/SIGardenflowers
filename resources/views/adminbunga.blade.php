@@ -26,11 +26,7 @@
 <body class="dark-edition">
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="black" data-image="{!! asset('asset/asset3/img/sidebar-2.jpg') !!}">
-            <!--
-        Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
 
-        Tip 2: you can also add an image using data-image tag
-    -->
             <div class="logo"><a href="/index" class="simple-text logo-normal">
           GARDENIA FLORIST
         </a></div>
@@ -40,6 +36,12 @@
                         <a class="nav-link" href="/admin">
                           <i class="material-icons">dashboard</i>
                           <p>Dashboard</p>
+                        </a>
+                      </li>
+                      <li class="nav-item {{ Request::is('adminuser') ? 'active' : '' }} ">
+                        <a class="nav-link" href="/adminuser">
+                          <i class="material-icons"></i>
+                          <p>Data User</p>
                         </a>
                       </li>
                       <li class="nav-item {{ Request::is('adminbunga') ? 'active' : '' }} ">

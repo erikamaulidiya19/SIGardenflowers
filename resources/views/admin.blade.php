@@ -1,17 +1,4 @@
-<!--
-=========================================================
-* Material Dashboard Dark Edition - v2.1.0
-=========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-dark
-* Copyright 2019 Creative Tim (http://www.creative-tim.com)
-
-* Coded by www.creative-tim.com
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,6 +40,12 @@
             <a class="nav-link" href="/admin">
               <i class="material-icons">dashboard</i>
               <p>Dashboard</p>
+            </a>
+          </li>
+          <li class="nav-item {{ Request::is('adminuser') ? 'active' : '' }} ">
+            <a class="nav-link" href="/adminuser">
+              <i class="material-icons"></i>
+              <p>Data User</p>
             </a>
           </li>
           <li class="nav-item ">

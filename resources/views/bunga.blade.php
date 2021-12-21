@@ -54,17 +54,7 @@ $(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			});
 		</script>
-		<!--[if lt IE 8]>
-		<div style=' clear: both; text-align:center; position: relative;'>
-			<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
-				<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
-			</a>
-		</div>
-		<![endif]-->
-		<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<link rel="stylesheet" media="screen" href="css/ie.css">
-		<![endif]-->
+
 	</head>
 	<body class="page1" id="top">
 <!--==============================header=================================-->
@@ -77,8 +67,8 @@ $(document).ready(function(){
 								<li class="current"><a href="/user">Home</a></li>
 								<li><a href="/tabelbunga">Tempat Penjualan</a></li>
 								<li><a href="/tabelbunga">Bucket Bunga</a></li>
-                                <li><a href="index-1.html">About</a></li>
-								<li><a href="index-2.html">Contact</a></li>
+                                <li><a href="/user">About</a></li>
+								<li><a href="/user">Contact</a></li>
 							</ul>
 						</nav>
 						<div class="clear"></div>

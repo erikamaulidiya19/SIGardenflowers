@@ -42,7 +42,7 @@
 
 <header class="navigation">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="/index"><img class="img-fluid" src="{!! asset('asset/images/flower.png') !!}" style="width:20em;" alt="parsa"></a>
+    <a class="navbar-brand" href="/user"><img class="img-fluid" src="{!! asset('asset/images/flower.png') !!}" style="width:20em;" alt="parsa"></a>
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navogation"
       aria-controls="navogation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -61,7 +61,6 @@
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="/bunga">Flowers</a>
               <a class="dropdown-item" href="/tanamanhias">Plants</a>
-              <a class="dropdown-item" href="/cafe">Cafe & Cake</a>
             </div>
           </li>
 

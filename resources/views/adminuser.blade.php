@@ -87,12 +87,11 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Data Tanaman Hias</h4>
+                                    <h4 class="card-title ">Data User</h4>
                                     <p class="card-category"></p>
                                 </div>
 
                                 <div class="card-body">
-            <td class="border-bottom-0"><a href="/inserthias" class="btn btn-primary">Tambah Data</a></td>
 
                                     <div class="table-responsive">
                                         <table class="table">
@@ -101,27 +100,14 @@
                                                     ID
                                                 </th>
                                                 <th>
-                                                    Nama Tanaman Hias
+                                                    Nama
                                                 </th>
                                                 <th>
-                                                    Toko Tanaman Hias
+                                                    Email
                                                 </th>
-                                                <th><center>
-                                                    Harga
-                                                </center>
-                                                <th><center>
-                                                    Alamat
-                                                </center>
-                                                </th>
+                                                <th>
+                                                    Username
 
-                                                </th>
-                                                <th><center>
-                                                    Image
-                                                </center>
-                                                </th>
-                                                <th> <center>
-                                                    Aksi
-                                                    </center>
                                                 </th>
                                             </thead>
                                             <tbody>
@@ -134,27 +120,14 @@
                                                         {{$no++}}
                                                     </td>
                                                     <td>
-                                                        {{$item->namahias}}
+                                                        {{$item->name}}
                                                     </td>
                                                     <td>
-                                                        {{$item->tokohias}}
+                                                        {{$item->email}}
                                                     </td>
                                                     <td>
-                                                        {{$item->harga}}
+                                                        {{$item->username}}
                                                     </td>
-                                                    <td>
-                                                        {{$item->alamathias}}
-                                                    </td>
-                                                    <td>
-                                                      <img src="{{ asset('storage/'.$item->imagehias) }}" alt="" width="100cm" height="100cm">
-
-                                                    </td>
-                                                    <td class="border-bottom-0"><a href="updatehias/{{ $item->id_hias }}" class="btn btn-primary">Edit</a></td>
-                                                    <form action="deletehias/{{ $item->id_hias }}" method="post">
-                                                        @csrf
-
-                                                        <td class="border-bottom-0" onclick="return confirm ('Anda yakin ingin menghapus data ini?')"><button type="submit" class="btn btn-primary">Delete</button></td>
-                                                    </form>
                                                 </tr>
                                                 @endforeach
                                                 </tr>
