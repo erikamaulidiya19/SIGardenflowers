@@ -10,12 +10,21 @@ NIM  : 1810817220017
 
 ## Information
 
-`Sistem Informasi Gardenia Florist` Merupakan sistem informasi yang berisikan informasi data bunga, kue, dan caffe
+`Sistem Informasi Gardenia Florist` Merupakan sistem informasi yang berisikan informasi data bunga, tanaman hias dan tempat penjualannya
 <br> diwilayah Kalimantan Selatan khususnya di Banjarmasin 
 memiliki 3 halaman, yaitu:
 - Landing Page
+- Halaman Login
+- Halaman Registrasi
 - Dasboard User
-- Dasboard Admin (Tabel Data Bunga)
+- Halaman Bunga
+- Halaman Data Bunga
+- Halaman Tanaman Hias
+- Halaman Data Tanaman Hias
+- Dasboard Admin
+- Halaman Tabel User (Admin)
+- Halaman Tabel Data Bunga (Admin)
+- Halaman Tabel Data Tanaman Hias (Admin)
 
 ## Requirements
 
@@ -50,3 +59,9 @@ php artisan migrate
 ```bash
 php artisan serve
 ```
+## Username & Password
+- Admin
+username: admin123
+password: admin123
+- User
+Melakukan Registrasi

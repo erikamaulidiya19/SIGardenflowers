@@ -118,10 +118,10 @@
 				<div class="grid_4">
 
 					<div class="banner">
-                        <img src="{{ asset('storage/'.$item->image) }}" alt="" width="640cm" height="300cm">
+                        <img src="{{ asset('storage/'.$item->imagehias) }}" alt="" width="640cm" height="300cm">
 						<div class="label">
-                            <div class="title"> {{$item->namabunga}}</div>
-							<div class="price">Harga<span>Rp.{{$item->harga}}(Pertangkai)</span></div>
+                            <div class="title"> {{$item->namahias}}</div>
+							<div class="price">Harga<span>Rp.{{$item->hargahias}}(Pertangkai)</span></div>
 						</div>
 					</div>
 				</div>
