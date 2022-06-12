@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
-            <a href="/user"><img src="{!! asset('asset/images/flower.png') !!}" alt="persa" class="img-fluid"></a>
+            <a href="/user"><img src="{!! asset('asset/images/com.jpg') !!}" alt="persa" class="img-fluid"></a>
           </div>
           <div class="col-md-3 col-sm-6 mb-4 mb-md-0">
             <h6>Address</h6>

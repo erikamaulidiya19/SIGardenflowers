@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>GARDENIA FLORIST</title>
+    <title>FRIENDLY COMPUTER</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
-    <link rel="icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
+    <link rel="shortcut icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
+    <link rel="icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" type="text/css" href="{!! asset('asset/asset2/css/bootstrap.css') !!}">
@@ -41,8 +41,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2 intro-text">
-                            <h1>WELCOME GARDENIA FLORIST</h1>
-                            <p>Informasi mengenai penjualan bunga, bucket bunga dan tanaman hias ada disini.<br> Jelajahi dan dapatkan informasinya.</p>
+                            <h1>WELCOME FRIENDLY COMPUTER</h1>
+                            <p>Informasi mengenai tempat penjualan Laptop, Spesifikasi Laptop dan Aksesoris Laptop ada disini. <br> <br> Jelajahi dan dapatkan informasinya Sekarang</p>
                             <a href="/login" class="btn btn-custom btn-lg page-scroll">Login <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                               </svg></a> </div>
@@ -57,14 +57,14 @@
             <div class="row">
                 <div class="col-xs-12 col-md-6">
                     <div class="about-text">
-                        <h2>Welcome to <span>Gardenia Florist</span></h2>
+                        <h2>Welcome to <span>Friendly Computer</span></h2>
                         <hr>
-                        <p>Kami menyediakan informasi mengenai bunga serta penjualan bunga di wilayah Banjarmasin</p>
-                        <p>Selain itu kami juga memberikan informasi mengenai tanaman hias yang ada di wilayah Banjarmasin yang cocok untuk menghias rumah anda semua</p>
+                        <p>Kami menyediakan informasi mengenai Laptop serta penjualan Laptop di wilayah Banjarmasin</p>
+                        <p>Selain itu kami juga memberikan informasi mengenai spesifikasi Laptop yang ada di wilayah Banjarmasin yang memudahkan anda menemukan Laptop yang anda inginkan</p>
                         <a href="/login" class="btn btn-custom btn-lg page-scroll">Pelayanan</a> </div>
                 </div>
                 <div class="col-xs-12 col-md-3">
-                    <div class="about-media"> <img src="{!! asset('asset/asset2/img/bungaa.jpg') !!}" alt=" "> </div>
+                    <div class="about-media"> <img src="{!! asset('asset/asset2/img/lap.jpg') !!}" alt=" "> </div>
                     <div class="about-desc">
                         <h3>Bunga</h3>
                         <p>Informasi mengenai bunga - bunga yang indah yang cocok untuk orang orang yang disayang</p>

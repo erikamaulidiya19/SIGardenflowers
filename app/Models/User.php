@@ -42,4 +42,8 @@ protected $guarded =['id'];
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function pesan_user(){
+        return $this->hasMany('App\Pesan','user_id', 'id');
+    }
 }

@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="{!! asset('asset/asset3/img/favicon.png') !!}}">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>
-        Admin User
+        Admin Laptop
     </title>
     <!--Favicon-->
   <link rel="shortcut icon" href="{!! asset('asset/images/icon.png') !!}" type="image/x-icon">
@@ -87,11 +87,12 @@
                         <div class="col-md-12">
                             <div class="card">
                                 <div class="card-header card-header-primary">
-                                    <h4 class="card-title ">Data User</h4>
+                                    <h4 class="card-title ">Data Laptop</h4>
                                     <p class="card-category"></p>
                                 </div>
 
                                 <div class="card-body">
+            <td class="border-bottom-0"><a href="/insertlaptop" class="btn btn-primary">Tambah Data</a></td>
 
                                     <div class="table-responsive">
                                         <table class="table">
@@ -100,14 +101,27 @@
                                                     ID
                                                 </th>
                                                 <th>
-                                                    Nama
+                                                    Nama Laptop
                                                 </th>
                                                 <th>
-                                                    Email
+                                                    Toko Laptop
                                                 </th>
-                                                <th>
-                                                    Username
+                                                <th><center>
+                                                    Harga
+                                                </center>
+                                                <th><center>
+                                                    Alamat
+                                                </center>
+                                                </th>
 
+                                                </th>
+                                                <th><center>
+                                                    Image
+                                                </center>
+                                                </th>
+                                                <th> <center>
+                                                    Aksi
+                                                    </center>
                                                 </th>
                                             </thead>
                                             <tbody>
@@ -120,14 +134,27 @@
                                                         {{$no++}}
                                                     </td>
                                                     <td>
-                                                        {{$item->name}}
+                                                        {{$item->namalaptop}}
                                                     </td>
                                                     <td>
-                                                        {{$item->email}}
+                                                        {{$item->tokolaptop}}
                                                     </td>
                                                     <td>
-                                                        {{$item->username}}
+                                                        {{$item->harga}}
                                                     </td>
+                                                    <td>
+                                                        {{$item->alamatlaptop}}
+                                                    </td>
+                                                    <td>
+                                                      <img src="{{ asset('storage/'.$item->image) }}" alt="" width="100cm" height="100cm">
+
+                                                    </td>
+                                                    <td class="border-bottom-0"><a href="updatelaptop/{{ $item->id_laptop }}" class="btn btn-primary">Edit</a></td>
+                                                    <form action="deletelaptop/{{ $item->id_laptop }}" method="post">
+                                                        @csrf
+
+                                                        <td class="border-bottom-0" onclick="return confirm ('Anda yakin ingin menghapus data ini?')"><button type="submit" class="btn btn-primary">Delete</button></td>
+                                                    </form>
                                                 </tr>
                                                 @endforeach
                                                 </tr>

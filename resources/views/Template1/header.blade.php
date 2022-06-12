@@ -21,8 +21,8 @@
   <link href="{!! asset('asset/css/style.css') !!}" rel="stylesheet">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
-  <link rel="icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
+  <link rel="shortcut icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
+  <link rel="icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
 
 </head>
 
@@ -42,7 +42,7 @@
 
 <header class="navigation">
   <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="/user"><img class="img-fluid" src="{!! asset('asset/images/flower.png') !!}" style="width:20em;" alt="parsa"></a>
+    <a class="navbar-brand" href="/user"><img class="img-fluid" src="{!! asset('asset/images/com.jpg') !!}" style="width:10em;" alt="parsa"></a>
     <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navogation"
       aria-controls="navogation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -51,22 +51,26 @@
     <div class="collapse navbar-collapse text-center" id="navogation">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="/user">Home</a>
+            <a class="nav-link text-uppercase text-dark" href="/user">Home <i class="ti-home"></i></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-uppercase text-dark" href="/user">Buy <i class="ti-shopping-cart"></i></a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown"
               role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Categories
+              <i class="ti-dropbox-alt"></i>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/bunga">Flowers</a>
-              <a class="dropdown-item" href="/tanamanhias">Plants</a>
+              <a class="dropdown-item" href="/laptop">Laptop</a>
+              <a class="dropdown-item" href="/tanamanhias">Laptop Accessories</a>
             </div>
           </li>
 
           <form action="/logout" method="post">
         <li class="nav-item">
-          <a class="nav-link text-uppercase text-dark" href="/index">Logout</a>
+          <a class="nav-link text-uppercase text-dark" href="/index">Logout <i class="ti-arrow-circle-right"></i></a>
         </li>
           </form>
       </ul>

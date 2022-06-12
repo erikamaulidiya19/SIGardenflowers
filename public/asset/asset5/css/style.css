@@ -342,7 +342,8 @@ header h1 a img {
 }
 
 .banner .label {
-    color: #fff;
+    background-opacity: #e5e5e5;
+    color: black;
     position: absolute;
     text-align: center;
     left: 0;

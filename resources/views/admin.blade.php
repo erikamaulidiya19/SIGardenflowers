@@ -49,9 +49,9 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="/adminbunga">
+            <a class="nav-link" href="/adminlaptop">
               <i class="material-icons"></i>
-              <p>Data Bunga</p>
+              <p>Data Laptop</p>
             </a>
           </li>
           <li class="nav-item ">
