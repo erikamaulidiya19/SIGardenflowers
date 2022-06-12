@@ -27,8 +27,8 @@
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="black" data-image="{!! asset('asset/asset3/img/sidebar-2.jpg') !!}">
 
-            <div class="logo"><a href="/index" class="simple-text logo-normal">
-          GARDENIA FLORIST
+        <div class="logo"><a href="/adminuser" class="simple-text logo-normal">
+          FRIENDLY COMPUTER
         </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -50,10 +50,10 @@
                           <p>Data Laptop</p>
                         </a>
                       </li>
-                      <li class="nav-item {{ Request::is('adminhias') ? 'active' : '' }} ">
-                        <a class="nav-link" href="/adminhias">
+                      <li class="nav-item {{ Request::is('index') ? 'active' : '' }} ">
+                        <a class="nav-link" href="/index">
                           <i class="material-icons"></i>
-                          <p>Data Tanaman Hias</p>
+                          <p>Logout</p>
                         </a>
                       </li>
                 </ul>

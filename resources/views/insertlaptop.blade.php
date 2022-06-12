@@ -10,8 +10,8 @@
      Insert Data Laptop
     </title>
     <!--Favicon-->
-  <link rel="shortcut icon" href="{!! asset('asset/images/icon.png') !!}" type="image/x-icon">
-  <link rel="icon" href="{!! asset('asset/images/icon.png') !!}" type="image/x-icon">
+    <link rel="shortcut icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
+    <link rel="icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -32,7 +32,7 @@
         Tip 2: you can also add an image using data-image tag
     -->
             <div class="logo"><a href="/index" class="simple-text logo-normal">
-          GARDENIA FLORIST
+      FRIENDLY COMPUTER
         </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
@@ -45,7 +45,7 @@
                       <li class="nav-item ">
                         <a class="nav-link" href="/adminlaptop">
                           <i class="material-icons"></i>
-                          <p>Table Laptop</p>
+                          <p>Tabel Laptop</p>
                         </a>
                       </li>
                 </ul>
@@ -89,8 +89,8 @@
                   </div>
 
                 <div class="mb-3">
-                    <label for="alamatlaptop" class="form-label">Alamat Toko Laptop</label>
-                    <input type="text" class="form-control" id="alamatlaptop" name="alamatlaptop"required value="{{ old('alamatlaptop') }}">
+                    <label for="stok" class="form-label">Stok Barang</label>
+                    <input type="text" class="form-control" id="stok" name="stok"required value="{{ old('stok') }}">
                   </div>
 
 

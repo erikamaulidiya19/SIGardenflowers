@@ -31,39 +31,39 @@
 
         Tip 2: you can also add an image using data-image tag
     -->
-      <div class="logo"><a href="/index" class="simple-text logo-normal">
-        GARDENIA FLORIST
-        </a></div>
-      <div class="sidebar-wrapper">
-        <ul class="nav">
-          <li class="nav-item active  ">
-            <a class="nav-link" href="/admin">
-              <i class="material-icons">dashboard</i>
-              <p>Dashboard</p>
-            </a>
-          </li>
-          <li class="nav-item {{ Request::is('adminuser') ? 'active' : '' }} ">
-            <a class="nav-link" href="/adminuser">
-              <i class="material-icons"></i>
-              <p>Data User</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/adminlaptop">
-              <i class="material-icons"></i>
-              <p>Data Laptop</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="/adminhias">
-              <i class="material-icons"></i>
-              <p>Data Tanaman Hias</p>
-            </a>
-          </li>
+    <div class="logo"><a href="/admin" class="simple-text logo-normal">
+        FRIENDLY COMPUTER
+      </a></div>
+          <div class="sidebar-wrapper">
+              <ul class="nav">
+                  <li class="nav-item {{ Request::is('/admin') ? 'active' : '' }} ">
+                      <a class="nav-link" href="/admin">
+                        <i class="material-icons">dashboard</i>
+                        <p>Dashboard</p>
+                      </a>
+                    </li>
+                    <li class="nav-item {{ Request::is('adminuser') ? 'active' : '' }} ">
+                      <a class="nav-link" href="/adminuser">
+                        <i class="material-icons"></i>
+                        <p>Data User</p>
+                      </a>
+                    </li>
+                    <li class="nav-item {{ Request::is('adminlaptop') ? 'active' : '' }} ">
+                      <a class="nav-link" href="/adminlaptop">
+                        <i class="material-icons"></i>
+                        <p>Data Laptop</p>
+                      </a>
+                    </li>
+                    <li class="nav-item {{ Request::is('index') ? 'active' : '' }} ">
+                        <a class="nav-link" href="/index">
+                          <i class="material-icons"></i>
+                          <p>Logout</p>
+                        </a>
+                      </li>
 
-        </ul>
+              </ul>
+          </div>
       </div>
-    </div>
     <div class="main-panel">
    <!-- Navbar -->
    <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top " id="navigation-example">

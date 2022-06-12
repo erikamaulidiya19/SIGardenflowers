@@ -9,8 +9,8 @@
             <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/lepi1.jpg')}}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
-                <p class="text-uppercase">Beli Laptop Termurah</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="/laptop">Tempat di Jual Laptop Terlaris Terjual</a></h4>
+                <p class="text-uppercase">Cek Laptop Di sini</p>
+                <h4 class="card-title mb-4"><a class="text-white" href="/laptop">Penjualan Laptop Terlaris</a></h4>
                 <a class="btn btn-outline-light" href="/laptop">Buy Now</a>
               </div>
             </div>
@@ -18,11 +18,11 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/lepi2.jpg')}}" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/cat.jpg')}}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
-                <p class="text-uppercase">Beli Aksesoris Laptop</p>
-                <h4 class="card-title mb-4"><a class="text-white" href="/laptop">Tempat di Jaul Aksesoris Laptop Terbaik</a></h4>
+                <p class="text-uppercase">Cek Aksesoris Laptop Di sini</p>
+                <h4 class="card-title mb-4"><a class="text-white" href="/laptop">Tambahkan Aksesoris Pada Laptop Kalian </a></h4>
                 <a class="btn btn-outline-light" href="/laptop">Buy Now</a>
               </div>
             </div>
@@ -30,7 +30,7 @@
         </div>
 
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-          <article class="card bg-dark text-center text-white border-0 rounded-0">
+          {{-- <article class="card bg-dark text-center text-white border-0 rounded-0">
             <img class="card-img rounded-0 img-fluid w-100" src="{{asset('asset/images/lepi3.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
@@ -39,10 +39,10 @@
                 <a class="btn btn-outline-light" href="/tabellaptop">Read More</a>
               </div>
             </div>
-          </article>
+          </article> --}}
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
-          <article class="card bg-dark text-center text-white border-0 rounded-0">
+          {{-- <article class="card bg-dark text-center text-white border-0 rounded-0">
             <img class="card-img rounded-0 img-fluid w-100" src="{{ asset('asset/images/cat.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
@@ -51,7 +51,7 @@
                 <a class="btn btn-outline-light" href="/tabellaptop">Read More</a>
               </div>
             </div>
-          </article>
+          </article> --}}
         </div>
       </div>
     </div>

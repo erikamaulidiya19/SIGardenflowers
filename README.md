@@ -1,30 +1,25 @@
-# Sistem Informasi Gardenia Florist
+# Sistem Informasi Penjualan Laptop
 
 <h3>
 Nama : ERIKA MAULIDIYA <br>
 NIM  : 1810817220017
 </h3>
-<p align="center">
-    <img src="public/asset/images/gf.png" width="1280" title="Sistem Informasi Gardenia Florist"/>
-</p>
 
 ## Information
-
-`Sistem Informasi Gardenia Florist` Merupakan sistem informasi yang berisikan informasi data bunga, tanaman hias dan tempat penjualannya
-<br> diwilayah Kalimantan Selatan khususnya di Banjarmasin 
 memiliki 3 halaman, yaitu:
 - Landing Page
 - Halaman Login
 - Halaman Registrasi
 - Dasboard User
-- Halaman Bunga
-- Halaman Data Bunga
-- Halaman Tanaman Hias
-- Halaman Data Tanaman Hias
+- Halaman Jual Laptop
+- Halaman Data Laptop
+- Halaman Keranjang/Pesan
+- Halaman Chekout
+- Halaman Konfirmasi
 - Dasboard Admin
 - Halaman Tabel User (Admin)
-- Halaman Tabel Data Bunga (Admin)
-- Halaman Tabel Data Tanaman Hias (Admin)
+- Halaman Tabel Data Laptop (Admin)
+
 
 ## Requirements
 

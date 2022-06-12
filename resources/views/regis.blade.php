@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="shortcut icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
-    <link rel="icon" href="{!! asset('asset/images/logo.png') !!}" type="image/x-icon">
+    <link rel="shortcut icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
+    <link rel="icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
 
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
@@ -25,7 +25,7 @@
 			<div class="row justify-content-center">
 				<div class="col-md-7 col-lg-5">
 					<div class="wrap">
-						<div class="img" style="background-image: url(asset/asset2/img/bug.png);"></div>
+						<div class="img" style="background-image: url(asset/asset2/img/lap11.jpg);"></div>
 						<div class="login-wrap p-4 p-md-5">
 			      	<div class="d-flex">
 			      		<div class="w-100">

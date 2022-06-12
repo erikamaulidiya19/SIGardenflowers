@@ -54,7 +54,7 @@
             <a class="nav-link text-uppercase text-dark" href="/user">Home <i class="ti-home"></i></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link text-uppercase text-dark" href="/user">Buy <i class="ti-shopping-cart"></i></a>
+            <a class="nav-link text-uppercase text-dark" href="/laptop">Buy <i class="ti-shopping-cart"></i></a>
         </li>
         <li class="nav-item dropdown">
             <a class="nav-link text-uppercase text-dark dropdown-toggle" href="#" id="navbarDropdown"
@@ -63,8 +63,8 @@
               <i class="ti-dropbox-alt"></i>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="/laptop">Laptop</a>
-              <a class="dropdown-item" href="/tanamanhias">Laptop Accessories</a>
+              <a class="dropdown-item" href="/tabellaptop">Daftar Laptop</a>
+              <a class="dropdown-item" href="/tabellaptop">Daftar Laptop Accessories</a>
             </div>
           </li>
 

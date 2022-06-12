@@ -35,7 +35,9 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="{!! asset('asset/asest6/css/util.css') !!}">
 	<link rel="stylesheet" type="text/css" href="{!! asset('asset/asset6/css/main.css') !!}">
+
 <!--===============================================================================================-->
+
 </head>
 <body>
     <header class="navigation">
@@ -73,31 +75,35 @@
 					<div class="table100-head">
 						<table>
 							<thead>
-								<tr class="row100 head">
+								<tr>
 									<th class="cell100 column1">No</th>
-									<th class="cell100 column2">Nama Barang</th>
-									<th class="cell100 column3">Toko Laptop</th>
+									<th class="cell100 column2">Laptop</th>
                                     <th class="cell100 column3">Harga</th>
+                                    <th class="cell100 column4">Aksi</th>
 								</tr>
 							</thead>
 						</table>
 					</div>
 
 					<div class="table100-body js-pscroll">
+                        {{-- {{ dd(session('cart')) }} --}}
+                        @if (session('cart'))
 						<table>
-							<tbody>
+                            @foreach (session('cart') as $id => $item)
+                            <tbody>
                                 @php
                                 $no=1;
-                            @endphp
-                             @foreach ($data as $item)
-								<tr class="row100 body">
+                                @endphp
+                             <tr class="row100 body">
 									<td class="cell100 column1">{{$no++}}</td>
-									<td class="cell100 column2">{{$item->namalaptop}}</td>
-									<td class="cell100 column3">{{$item->tokolaptop}}</td>
-									<td class="cell100 column4">{{$item->harga}}</td>
+									<td class="cell100 column2">{{$item['namaLaptop']}}</td>
+									<td class="cell100 column3">{{$item['jumlahHarga']}}</td>
+                                    <td class="cell100 column4" ><a class="btn btn-outline-light" style="background-color:cadetblue;color:black;" href="{{ url('beli/'.$laptop->id_laptop) }}">Checkout</a></td>
                                 </tr>
                                 @endforeach
 							</tbody>
+
+                            @endif
 						</table>
 					</div>
 				</div>
@@ -122,7 +128,7 @@
  <script src="{!! asset('plugins/reading-time/readingTime.min.js') !!}"></script>
 
  <!-- Main Script -->
- <script src="{!! asset('asset/js/script.js"') !!}></script>
+ <script src="{!! asset('asset/js/script.js"') !!}"></script>
 
 
 <!--===============================================================================================-->

@@ -342,8 +342,6 @@ header h1 a img {
 }
 
 .banner .label {
-    background-opacity: #e5e5e5;
-    color: black;
     position: absolute;
     text-align: center;
     left: 0;
@@ -354,12 +352,15 @@ header h1 a img {
 }
 
 .banner .label .title {
+    color: black;
     font-size: 30px;
     margin-bottom: 14px;
     text-transform: uppercase;
 }
 
 .banner .label .price span {
+    color: wheat;
+    background-color: tomato;
     display: block;
     font-size: 24px;
     padding-top: 3px;

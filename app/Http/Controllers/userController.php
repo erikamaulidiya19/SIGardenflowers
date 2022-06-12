@@ -20,4 +20,11 @@ class UserController extends Controller
         return view('user');
     }
 
+    public function confir()
+    {
+        return view('confir');
+    }
+
+
+
 }

@@ -10,9 +10,8 @@
     <title>
         Admin Laptop
     </title>
-    <!--Favicon-->
-  <link rel="shortcut icon" href="{!! asset('asset/images/icon.png') !!}" type="image/x-icon">
-  <link rel="icon" href="{!! asset('asset/images/icon.png') !!}" type="image/x-icon">
+    <link rel="shortcut icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
+    <link rel="icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
     <!--     Fonts and icons     -->
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
@@ -27,40 +26,38 @@
     <div class="wrapper ">
         <div class="sidebar" data-color="purple" data-background-color="black" data-image="{!! asset('asset/asset3/img/sidebar-2.jpg') !!}">
 
-            <div class="logo"><a href="/index" class="simple-text logo-normal">
-          GARDENIA FLORIST
-        </a></div>
-            <div class="sidebar-wrapper">
-                <ul class="nav">
-                    <li class="nav-item {{ Request::is('/admin') ? 'active' : '' }} ">
-                        <a class="nav-link" href="/admin">
-                          <i class="material-icons">dashboard</i>
-                          <p>Dashboard</p>
-                        </a>
-                      </li>
-                      <li class="nav-item {{ Request::is('adminuser') ? 'active' : '' }} ">
-                        <a class="nav-link" href="/adminuser">
-                          <i class="material-icons"></i>
-                          <p>Data User</p>
-                        </a>
-                      </li>
-                      <li class="nav-item {{ Request::is('adminlaptop') ? 'active' : '' }} ">
-                        <a class="nav-link" href="/adminlaptop">
-                          <i class="material-icons"></i>
-                          <p>Data Laptop</p>
-                        </a>
-                      </li>
-                      <li class="nav-item {{ Request::is('adminhias') ? 'active' : '' }} ">
-                        <a class="nav-link" href="/adminhias">
-                          <i class="material-icons"></i>
-                          <p>Data Tanaman Hias</p>
-                        </a>
-                      </li>
-                </ul>
-            </div>
-        </div>
-
-
+            <div class="logo"><a href="/adminlaptop" class="simple-text logo-normal">
+                FRIENDLY COMPUTER
+              </a></div>
+                  <div class="sidebar-wrapper">
+                      <ul class="nav">
+                          <li class="nav-item {{ Request::is('/admin') ? 'active' : '' }} ">
+                              <a class="nav-link" href="/admin">
+                                <i class="material-icons">dashboard</i>
+                                <p>Dashboard</p>
+                              </a>
+                            </li>
+                            <li class="nav-item {{ Request::is('adminuser') ? 'active' : '' }} ">
+                              <a class="nav-link" href="/adminuser">
+                                <i class="material-icons"></i>
+                                <p>Data User</p>
+                              </a>
+                            </li>
+                            <li class="nav-item {{ Request::is('adminlaptop') ? 'active' : '' }} ">
+                              <a class="nav-link" href="/adminlaptop">
+                                <i class="material-icons"></i>
+                                <p>Data Laptop</p>
+                              </a>
+                            </li>
+                            <li class="nav-item {{ Request::is('index') ? 'active' : '' }} ">
+                                <a class="nav-link" href="/index">
+                                  <i class="material-icons"></i>
+                                  <p>Logout</p>
+                                </a>
+                              </li>
+                      </ul>
+                  </div>
+              </div>
         <div class="main-panel">
             @if(session()->has('success'))
 
@@ -110,7 +107,7 @@
                                                     Harga
                                                 </center>
                                                 <th><center>
-                                                    Alamat
+                                                    Jumlah Barang
                                                 </center>
                                                 </th>
 
@@ -143,10 +140,10 @@
                                                         {{$item->harga}}
                                                     </td>
                                                     <td>
-                                                        {{$item->alamatlaptop}}
+                                                       <center> {{$item->stok}} </center>
                                                     </td>
                                                     <td>
-                                                      <img src="{{ asset('storage/'.$item->image) }}" alt="" width="100cm" height="100cm">
+                                                      <img src="{{ asset('assets/post-image/'.$item->image) }}" alt="" width="100cm" height="100cm">
 
                                                     </td>
                                                     <td class="border-bottom-0"><a href="updatelaptop/{{ $item->id_laptop }}" class="btn btn-primary">Edit</a></td>

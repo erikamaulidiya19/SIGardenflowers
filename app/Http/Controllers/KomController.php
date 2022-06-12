@@ -44,15 +44,26 @@ class KomController extends Controller
             'namalaptop'=>'required',
             'tokolaptop'=>'required',
             'harga'=>'required',
-            'alamatlaptop'=>'required',
+            'stok'=>'required',
             'image'=>'image|file|max:1024'
 
 
            ]);
             $get=Laptop::find($request->id_laptop);
 
+
+            if ($request->hasFile('image')){
+
+
+
+            }
            if($request->file('image')){
-            $validatedData['image']=$request->file('image')->store('post-image');
+            $file = $request->file('image');
+            $ext = $file->getClientOriginalExtension();
+            $filename = time().'.'.$ext;
+            $file->move('assets/post-image/',$filename);
+            $validatedData['image']=$filename;
+            // $request->file('image')->store('post-image');
         }
         else{
             $validatedData['image']=$get->image;
@@ -64,7 +75,7 @@ class KomController extends Controller
                    'namalaptop'=> $request->input('namalaptop'),
                    'tokolaptop'=> $request->input('tokolaptop'),
                    'harga'=> $request->input('harga'),
-                   'alamatlaptop'=> $request->input('alamatlaptop'),
+                   'stok'=> $request->input('stok'),
                    'image'=>$validatedData['image'],
 
                ]);
@@ -94,5 +105,7 @@ class KomController extends Controller
 
         return view('updatelaptop', compact('data'));
     }
-
+    public function acc(){
+        return view('confir');
+    }
 }

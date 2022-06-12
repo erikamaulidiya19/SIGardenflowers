@@ -15,7 +15,7 @@ class Laptop extends Model
     protected $fillable = [
         'namalaptop',
         'tokolaptop',
-        'alamatlaptop',
+        'stok',
         'image',
         'harga'
     ];

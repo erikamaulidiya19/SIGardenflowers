@@ -24,6 +24,7 @@
 		<script src="{!! asset('asset/asset5/js/jquery.mobile.customized.min.js') !!}"></script>
 		<!--<![endif]-->
 		<script src="{!! asset('asset/asset5/booking/js/booking.js') !!}"></script>
+
 		<script>
 $(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
@@ -54,9 +55,12 @@ $(document).ready(function(){
 			$().UItoTop({ easingType: 'easeOutQuart' });
 			});
 		</script>
-
+<link rel="shortcut icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
+<link rel="icon" href="{!! asset('asset/images/logo2.png') !!}" type="image/x-icon">
 	</head>
+
 	<body class="page1" id="top">
+
 <!--==============================header=================================-->
 		<div class="slider_wrapper">
 			<div id="camera_wrap" class="">
@@ -97,34 +101,20 @@ $(document).ready(function(){
                 @foreach ($data as $item)
 
 				<div class="grid_4">
-
+                    {{-- {{ dd($data) }} --}}
 					<div class="banner">
-                        <img src="{{ asset('storage/'.$item->image) }}" alt="" width="640cm" height="300cm">
+                        <img src="{{ asset('assets/post-image/'.$item->image) }}" alt="" width="640cm" height="300cm">
 						<div class="label">
                             <div class="title"> {{$item->namalaptop}}</div>
 							<div class="price">Harga<span>Rp.{{$item->harga}}</span></div>
-                            <a class="btn btn-outline-light" href="/laptop">Buy Now</a>
+                            <a class="btn btn-outline-light" href="{{ url('pesan/'.$item->id_laptop) }}">Buy Now</a>
 						</div>
 					</div>
 				</div>
                 @endforeach
-
-				<div class="grid_5 prefix_1">
-					<h3>Welcome</h3>
-					<img src="{!! asset ('asset/asset5/images/page1_img1.png') !!}" alt="">
-					<div class="extra_wrapper">
-						<p>Selamat Datang dibagian Tanaman Hias</p>
-						Kami menyediakan informasi mengenai jenis tanaman hias dan harganya berdasarkan harga pasaran pada tahun ini.
-					</div>
-					<div class="clear cl1"></div>
-					<p>Selain itu, kalian dapat melihat semua list tanaman hias dengan mengklik<span class="col1">Tanaman Hias</a></span> yang ada di menu pada halaman ini. Dan untuk mengetahui tempat penjualan tanaman hias di Banjarmasin dapat mengklik</p>
-					<p><span class="col1">Tempat Penjualan</a></span> pada menu.</p>
-					Terima kasih telah mengunjungi kami dan semoga hari kalian menyenangkan.
-				</div>
-
 			</div>
 		</div>
-
+        <center><a href="/user" class="btn btn-custom btn-lg page-scroll" style="margin:20px;">Back</a> </div><center>
 	</body>
 </html>
 

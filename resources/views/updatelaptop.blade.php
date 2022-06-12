@@ -45,7 +45,7 @@
                       <li class="nav-item ">
                         <a class="nav-link" href="/adminlaptop">
                           <i class="material-icons"></i>
-                          <p>Table Laptop</p>
+                          <p>Tabel Laptop</p>
                         </a>
                       </li>
                 </ul>
@@ -93,8 +93,8 @@
                   </div>
 
                 <div class="mb-3">
-                    <label for="alamatlaptop" class="form-label">Alamat Toko Laptop</label>
-                    <input type="text" class="form-control" id="alamatlaptop" name="alamatlaptop"required value="{{ $data->alamatlaptop }}">
+                    <label for="stok" class="form-label">Stok Barang</label>
+                    <input type="text" class="form-control" id="stok" name="stok"required value="{{ $data->stok}}">
                   </div>
 
 
